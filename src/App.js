@@ -1,12 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-<<<<<<< HEAD
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <h2>Welcome to ElectroHub</h2>
-=======
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
@@ -45,7 +37,6 @@ function App() {
         </Routes>
       </Router>
 
->>>>>>> main
     </div>
   );
 }
