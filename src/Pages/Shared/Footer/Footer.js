@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Container, Row, Button, InputGroup, FormControl } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import styles from './Footer.module.css';
-import { FaFacebookSquare, FaInstagram, FaYoutube } from "react-icons/fa";
+// import { FaFacebookSquare, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const pages = [
     {
@@ -33,9 +33,10 @@ const Footer = () => {
                         <p><small>Our main concern is to provide best customer service and after sales service.</small></p>
                         <h4 className="text-white">Social Links</h4>
                         <div className="d-flex justify-content-start align-items-center my-3">
-                            <FaFacebookSquare className={`${styles.social} me-4 fs-4`} />
+
+                            {/* <FaFacebookSquare className={`${styles.social} me-4 fs-4`} />
                             <FaInstagram className={`${styles.social} me-4 fs-4`} />
-                            <FaYoutube className={`${styles.social} me-4 fs-4`} />
+                            <FaYoutube className={`${styles.social} me-4 fs-4`} /> */}
 
                         </div>
                     </Col>
@@ -50,18 +51,6 @@ const Footer = () => {
                                     </li>
                                 ))
                             }
-                            {/* <li>
-                                <NavLink className="menu-item" to="/home">Home</NavLink>
-                            </li>
-                            <li>
-                                <NavLink className="menu-item" to="/about">About</NavLink>
-                            </li>
-                            <li>
-                                <NavLink className="menu-item" to="/contact">Contact</NavLink>
-                            </li>
-                            <li>
-                                <NavLink className="menu-item" to="/login">Login</NavLink>
-                            </li> */}
 
                         </ul>
                     </Col>
