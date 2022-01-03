@@ -2,7 +2,7 @@ import React from 'react';
 import { Col, Container, Row, Button, InputGroup, FormControl } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import styles from './Footer.module.css';
-// import { FaFacebookSquare, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const pages = [
     {
@@ -28,15 +28,15 @@ const Footer = () => {
         <div className={`${styles.footer} mx-auto`}>
             <Container>
                 <Row xs={1} md={4} lg={4} className="py-5 mx-auto">
-                    <Col >
+                    <Col>
                         <img className="img-fluid w-75 mb-3" src="https://i.ibb.co/jv7BsTW/electrologo2.png" alt="" />
                         <p><small>Our main concern is to provide best customer service and after sales service.</small></p>
                         <h4 className="text-white">Social Links</h4>
                         <div className="d-flex justify-content-start align-items-center my-3">
 
-                            {/* <FaFacebookSquare className={`${styles.social} me-4 fs-4`} />
+                            <FaFacebookSquare className={`${styles.social} me-4 fs-4`} />
                             <FaInstagram className={`${styles.social} me-4 fs-4`} />
-                            <FaYoutube className={`${styles.social} me-4 fs-4`} /> */}
+                            <FaYoutube className={`${styles.social} me-4 fs-4`} />
 
                         </div>
                     </Col>
