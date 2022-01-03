@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Nav, Navbar, Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
-import { FaSignOutAlt } from "react-icons/fa";
+// import { FaSignOutAlt } from "react-icons/fa";
 
 
 const pages = [
@@ -30,7 +30,7 @@ const Header = () => {
         <div>
             <Navbar collapseOnSelect className={`${styles.navbarBg}`} bg="" variant="light" fixed="top" expand="lg" >
                 <Container>
-                    <Navbar.Brand className={`me-5 ${styles.navBrand}`}>
+                    <Navbar.Brand className={`me-3 ${styles.navBrand}`}>
                         <NavLink to="/home">
                             <img className="img-fluid" src="https://i.ibb.co/jv7BsTW/electrologo2.png" alt="" width="80%" />
                         </NavLink>
@@ -58,7 +58,7 @@ const Header = () => {
                             <NavLink className="mx-2 text-decoration-none text-white" to="/register">Register</NavLink>
                             <NavLink className="mx-2 text-decoration-none text-white" to="/login">Login</NavLink>
                             <Button className="rounded-pill px-4 border-0" size="sm" variant="danger" >
-                                <FaSignOutAlt className="me-2" />
+                                {/* <FaSignOutAlt className="me-2" /> */}
                                 Log Out</Button>
 
                         </Nav>

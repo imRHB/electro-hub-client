@@ -1,0 +1,9 @@
+.testimonialCard {
+  background-color: #f4f4f4;
+}
+.customerName {
+  color: #078ea0;
+}
+.ratings span {
+  margin-left: 0 !important;
+}
