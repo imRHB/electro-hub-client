@@ -30,7 +30,7 @@ const Header = () => {
         <div>
             <Navbar collapseOnSelect className={`${styles.navbarBg}`} bg="" variant="light" fixed="top" expand="lg" >
                 <Container>
-                    <Navbar.Brand className={`me-5 ${styles.navBrand}`}>
+                    <Navbar.Brand className={`me-3 ${styles.navBrand}`}>
                         <NavLink to="/home">
                             <img className="img-fluid" src="https://i.ibb.co/jv7BsTW/electrologo2.png" alt="" width="80%" />
                         </NavLink>
