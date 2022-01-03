@@ -51,18 +51,6 @@ const Footer = () => {
                                     </li>
                                 ))
                             }
-                            {/* <li>
-                                <NavLink className="menu-item" to="/home">Home</NavLink>
-                            </li>
-                            <li>
-                                <NavLink className="menu-item" to="/about">About</NavLink>
-                            </li>
-                            <li>
-                                <NavLink className="menu-item" to="/contact">Contact</NavLink>
-                            </li>
-                            <li>
-                                <NavLink className="menu-item" to="/login">Login</NavLink>
-                            </li> */}
 
                         </ul>
                     </Col>
