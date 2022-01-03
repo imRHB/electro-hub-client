@@ -4,14 +4,17 @@ import './Login.css';
 import img1 from './img/wave.png';
 import img2 from './img/avatar.svg';
 import img3 from './img/bg.svg';
-import useAuth from '../../Hook/useAuth';
 import { Spinner } from 'react-bootstrap';
+import useAuth from "../../Hook/useAuth";
 
 const Login = () => {
     const [loginData, setLoginData] = useState({});
+
+    const { user, loginUser, signInWithGoogle, isLoading, authError } = useAuth();
+
     const location = useLocation();
     const history = useNavigate();
-    const { user, loginUser, signInWithGogle, isLoading, authError } = useAuth();
+
     const handleOnChange = e => {
         const field = e.target.name;
         const value = e.target.value;
@@ -19,15 +22,15 @@ const Login = () => {
         const newLoginData = { ...loginData };
         newLoginData[field] = value;
         setLoginData(newLoginData);
-
     }
+
     const handleLoginSubmit = e => {
         loginUser(loginData.email, loginData.password, location, history);
         e.preventDefault();
     }
 
     const handleGoogleSignIn = () => {
-        signInWithGogle(location, history);
+        signInWithGoogle(location, history);
     }
 
     return (
@@ -64,9 +67,6 @@ const Login = () => {
                             <NavLink className="forget" to="/register">New User?Please Register</NavLink>
                             <input type="submit" className="submit-btn" value="Login" />
                             <br />
-
-
-
 
                         </form>
                         <input onClick={handleGoogleSignIn} type="submit" className="submit-btn" value="Google Sign In" />

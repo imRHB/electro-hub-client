@@ -5,26 +5,28 @@ import Home from './Pages/Home/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
 import Products from './Pages/Products/Products/Products';
 import Contact from './Pages/Contact/Contact';
-import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
 import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
+import AuthProvider from './Contexts/AuthProvider/AuthProvider';
+import Login from "./Pages/Login/Login";
 
 function App() {
   return (
     <div className="">
-      <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/products" element={<Products />} />
+      <AuthProvider>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/products" element={<Products />} />
 
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          {/* <Route path="/cart" element={<Cart />} /> */}
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-          {/* <Route path="/manage-order" element={<ManageOrder/>}
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            {/* <Route path="/cart" element={<Cart />} /> */}
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+            {/* <Route path="/manage-order" element={<ManageOrder/>}
           <Route path="/dashboard/*" element={<PrivateRoute>
             <Dashboard />
           </PrivateRoute>}>
@@ -39,9 +41,10 @@ function App() {
             <Checkout />
           </PrivateRoute>} /> */}
 
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Router>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }
