@@ -42,7 +42,7 @@ const Testimonial = () => {
     // }
 
     return (
-        <div className="">
+        <div className="my-5 py-5">
             <Container>
                 <div className="text-center mx-auto">
                     <h5 className="">Testimonials and reviews</h5>
