@@ -4,7 +4,6 @@ import About from './Pages/About/About';
 import Home from './Pages/Home/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
 import Products from './Pages/Products/Products/Products';
-import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
 
 
