@@ -1,10 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Testimonial from './Pages/Testimonials/Testimonial/Testimonial';
 
 function App() {
   return (
     <div className="App">
-      <h2>Welcome to ElectroHub</h2>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/testimonial" element={<Testimonial />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

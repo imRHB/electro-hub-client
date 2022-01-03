@@ -19,6 +19,7 @@
     "react-hook-form": "^7.22.5",
     "react-router-dom": "^6.2.1",
     "react-scripts": "5.0.0",
+    "react-slick": "^0.28.1",
     "web-vitals": "^2.1.2"
   },
   "scripts": {
