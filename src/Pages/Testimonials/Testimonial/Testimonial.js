@@ -11,12 +11,12 @@ const testimonials = [
     {
         name: "Nasim Bin Kamal ",
         review: "Good quality products.",
-        rating: 5
+        rating: "5"
     },
     {
         name: "Nasim Sagar ",
         review: "Good quality products.",
-        rating: 4
+        rating: "4"
     },
     {
         name: "Test User",
@@ -67,7 +67,7 @@ const settings = {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     pauseOnHover: true,
     responsive: [
@@ -127,11 +127,11 @@ const Testimonial = () => {
                 </div>
                 <div className="mx-2 py-3">
                     <Slider {...settings}>
-                        {/* <Row xs={1} md={2} lg={3}> */}
+
                         {
                             testimonials?.map((testimonial, t_id) => (<SingleTestimonial key={t_id} testimonial={testimonial} />))
                         }
-                        {/* </Row> */}
+
                     </Slider>
 
                 </div>
