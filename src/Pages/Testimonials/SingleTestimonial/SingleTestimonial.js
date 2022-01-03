@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Row } from 'react-bootstrap';
+import { Card, Col, Row } from 'react-bootstrap';
 import Rating from 'react-rating';
 import styles from './SingleTestimonial.module.css';
 
@@ -7,7 +7,7 @@ import styles from './SingleTestimonial.module.css';
 
 const SingleTestimonial = ({ testimonial }) => {
     return (
-        <div className={`shadow-sm mx-2 my-5 p-3 text-center rounded-3 ${styles.testimonialCard}`}>
+        <Card className={`shadow-sm mx-2 my-5 p-3 text-center rounded-3 ${styles.testimonialCard}`}>
             <Row xs={1} md={2} lg={2} className='pb-2 d-flex justify-content-center align-items-center'>
                 <Col>
                     <div>
@@ -31,7 +31,7 @@ const SingleTestimonial = ({ testimonial }) => {
 
                 </div>
             </div>
-        </div >
+        </Card>
 
 
     );
