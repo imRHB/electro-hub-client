@@ -33,6 +33,7 @@ const Footer = () => {
                         <p><small>Our main concern is to provide best customer service and after sales service.</small></p>
                         <h4 className="text-white">Social Links</h4>
                         <div className="d-flex justify-content-start align-items-center my-3">
+
                             <FaFacebookSquare className={`${styles.social} me-4 fs-4`} />
                             <FaInstagram className={`${styles.social} me-4 fs-4`} />
                             <FaYoutube className={`${styles.social} me-4 fs-4`} />
