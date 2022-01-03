@@ -20,13 +20,8 @@ function App() {
           <Route path="/products" element={<Products />} />
 
           <Route path="/about" element={<About />} />
-<<<<<<< HEAD
           <Route path="/contact" element={<Contact />} />
           {/* <Route path="/cart" element={<Cart />} />
-=======
-          {/*<Route path="/contact" element={<Contact />} />
-          <Route path="/cart" element={<Cart />} />
->>>>>>> main
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard/*" element={<PrivateRoute>
