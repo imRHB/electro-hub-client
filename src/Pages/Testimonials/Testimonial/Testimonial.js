@@ -125,7 +125,7 @@ const Testimonial = () => {
                     <h5 className="">Testimonials and reviews</h5>
                     <h2 className="text-secondary fw-bold">What Our Customers Say</h2>
                 </div>
-                <div className="mx-auto py-3">
+                <div className="mx-2 py-3">
                     <Slider {...settings}>
                         {/* <Row xs={1} md={2} lg={3}> */}
                         {
