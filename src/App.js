@@ -7,10 +7,7 @@ import Products from './Pages/Products/Products/Products';
 import Contact from './Pages/Contact/Contact';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
-import Dashboard from './Pages/Dashboard/Dashboard';
-
-
-
+import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
 
 function App() {
   return (
