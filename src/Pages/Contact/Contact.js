@@ -13,6 +13,7 @@ const Contact = () => {
                         <input type="text" className={`${styles.field}`} placeholder="Your Email " />
                         <input type="text" className={`${styles.field}`} placeholder="Phone" />
                         <textarea placeholder="Message" className={`${styles.field}`}></textarea>
+
                         <button className={`${styles.btn1}`}>Send</button>
                     </div>
                 </div>
