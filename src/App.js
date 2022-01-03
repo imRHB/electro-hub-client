@@ -5,6 +5,8 @@ import Home from './Pages/Home/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
 import Products from './Pages/Products/Products/Products';
 import Contact from './Pages/Contact/Contact';
+import Login from './Pages/Login/Login';
+import Register from './Pages/Register/Register';
 
 
 
@@ -20,10 +22,10 @@ function App() {
 
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          {/* <Route path="/cart" element={<Cart />} />
+          {/* <Route path="/cart" element={<Cart />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/dashboard/*" element={<PrivateRoute>
+          {/* <Route path="/dashboard/*" element={<PrivateRoute>
             <Dashboard />
           </PrivateRoute>}>
             <Route path="" element={<DashboardHome />} />
