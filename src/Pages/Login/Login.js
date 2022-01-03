@@ -11,7 +11,7 @@ const Login = () => {
     const [loginData, setLoginData] = useState({});
     const location = useLocation();
     const history = useNavigate();
-    const { user, loginUser, signInWithGoogle, isLoading, authError } = useAuth();
+    const { user, loginUser, signInWithGogle, isLoading, authError } = useAuth();
     const handleOnChange = e => {
         const field = e.target.name;
         const value = e.target.value;
@@ -27,7 +27,7 @@ const Login = () => {
     }
 
     const handleGoogleSignIn = () => {
-        signInWithGoogle(location, history);
+        signInWithGogle(location, history);
     }
 
     return (
