@@ -1,0 +1,12 @@
+.testingTitle {
+    background-color: blueviolet;
+}
+.gallery1 {
+    color: yellow;
+}
+.container p {
+    color: blue;
+}
+.container p:hover {
+    color: green;
+}
