@@ -3,7 +3,7 @@ import React from 'react';
 
 const SingleTestimonial = ({ testimonial }) => {
     return (
-        <div className="bg-warning shadow-sm mx-2 my-5 p-3 text-center rounded-3">
+        <div className="bg-info shadow-sm mx-2 my-5 p-3 text-center rounded-3">
             <h4 className="fw-bold">{testimonial?.name}</h4>
             <p className="customer fw-bold">Customer</p>
             <small>{testimonial?.review}</small>
