@@ -1,4 +1,18 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+<<<<<<< HEAD
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Testimonial from './Pages/Testimonials/Testimonial/Testimonial';
+
+function App() {
+  return (
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/testimonial" element={<Testimonial />} />
+        </Routes>
+      </BrowserRouter>
+=======
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
@@ -38,6 +52,7 @@ function App() {
         </Routes>
       </Router>
 
+>>>>>>> main
     </div>
   );
 }
