@@ -6,6 +6,8 @@ import NotFound from './Pages/NotFound/NotFound';
 import Products from './Pages/Products/Products/Products';
 // import './App.css';
 
+
+
 function App() {
   return (
     <div className="">
@@ -37,7 +39,6 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
-
     </div>
   );
 }
