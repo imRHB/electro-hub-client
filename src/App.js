@@ -7,6 +7,7 @@ import Products from './Pages/Products/Products/Products';
 import Contact from './Pages/Contact/Contact';
 import Login from './Pages/Login/Login';
 import Register from './Pages/Register/Register';
+import Dashboard from './Pages/Dashboard/Dashboard';
 
 
 
@@ -25,11 +26,13 @@ function App() {
           {/* <Route path="/cart" element={<Cart />} /> */}
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          {/* <Route path="/dashboard/*" element={<PrivateRoute>
+          <Route path="/dashboard" element={<Dashboard />} />
+          {/* <Route path="/manage-order" element={<ManageOrder/>}
+          <Route path="/dashboard/*" element={<PrivateRoute>
             <Dashboard />
           </PrivateRoute>}>
             <Route path="" element={<DashboardHome />} />
-            <Route path="manageOrders" element={<ManageOrders />} />
+            <Route path="manage-order" element={<ManageOrders />} />
             <Route path="addProducts" element={<AddProducts />} />
             <Route path="manageProducts" element={<ManageProducts />} />
             <Route path="myOrders" element={<MyOrders />} />
