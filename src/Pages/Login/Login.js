@@ -70,12 +70,12 @@ const Login = () => {
 
                         </form>
                         <input onClick={handleGoogleSignIn} type="submit" className="submit-btn" value="Google Sign In" />
-                        {user?.email && <div class="alert alert-primary" role="alert">
+                        {/* {user?.email && <div class="alert alert-primary" role="alert">
                             LogIn Successfully
                         </div>}
                         {authError && <div class="alert alert-danger" role="alert">
                             {authError}
-                        </div>}
+                        </div>} */}
                     </div>
                 </div>
             </div>
