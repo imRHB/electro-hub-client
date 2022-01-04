@@ -6,8 +6,8 @@ import styles from './TopSlider.module.css';
 const TopSlider = () => {
     return (
         <div>
-            <Carousel>
-                <Carousel.Item>
+            <Carousel className={`${styles.carouselSection}`}>
+                <Carousel.Item className={`${styles.singleCarouselItem}`}>
                     <img
                         className={`d-block w-100 ${styles.sliderImg}`}
                         src="https://i.ibb.co/ZXdjpKV/oxana-melis-Bu-Auu-EI2ub-M-unsplash.jpg"
@@ -26,7 +26,7 @@ const TopSlider = () => {
                         <Button className={`text-white border border-2 px-4 py-2 ${styles.sliderBtn}`} variant="outside-light">Prebook Now <i className="fas fa-angle-double-right"></i></Button>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className={`${styles.singleCarouselItem}`}>
                     <img
                         className={`d-block w-100 ${styles.sliderImg}`}
                         src="https://i.ibb.co/vxt79pk/harley-davidson-ee-TJKC-wz34-unsplash.jpg"
@@ -45,7 +45,7 @@ const TopSlider = () => {
                         <Button className={`text-white border border-2 px-4 py-2 ${styles.sliderBtn}`} variant="outside-light">Order Now <i className="fas fa-angle-double-right"></i></Button>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className={`${styles.singleCarouselItem}`}>
                     <img
                         className={`d-block w-100 ${styles.sliderImg}`}
                         src="https://i.ibb.co/648Ljzk/kirill-petropavlov-f-g-Cjl-Nc-VWo-unsplash-1.jpg"
@@ -64,7 +64,7 @@ const TopSlider = () => {
                         <Button className={`text-white border border-2 px-4 py-2 ${styles.sliderBtn}`} variant="outside-light">Order Now <i className="fas fa-angle-double-right"></i></Button>
                     </Carousel.Caption>
                 </Carousel.Item>
-                <Carousel.Item>
+                <Carousel.Item className={`${styles.singleCarouselItem}`}>
                     <img
                         className={`d-block w-100 ${styles.sliderImg}`}
                         src="https://i.ibb.co/Tbvq9HF/vikram-sundaramoorthy-Xp-OWm-X2-CBTQ-unsplash.jpg"
