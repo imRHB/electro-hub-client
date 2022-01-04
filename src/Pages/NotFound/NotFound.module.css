@@ -1,12 +1,11 @@
-.testingTitle {
-    background-color: blueviolet;
+.notFound {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.gallery1 {
-    color: yellow;
-}
-.container p {
-    color: blue;
-}
-.container p:hover {
-    color: green;
+.redirUrl:hover {
+    text-decoration: none;
+    color: #000080;
+    background-color: #DDF;
 }
