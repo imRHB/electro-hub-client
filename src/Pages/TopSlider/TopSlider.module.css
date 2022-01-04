@@ -9,12 +9,12 @@
   background-color: #078fa1;
 }
 
-.carousel {
+.carouselSection {
   width: 100%;
   min-height: 400px;
   max-height: 800px;
 }
-.carousel-item img {
+.singleCarouselItem img {
   background-position: fixed;
   background-size: cover;
   min-height: 400px;
@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: center;
 }
-.carousel-item::before {
+.singleCarouselItem::before {
   content: "";
   display: block;
   position: absolute;
@@ -41,7 +41,7 @@
   .caption {
     margin-bottom: 50px;
   }
-  .carousel-item {
+  .singleCarouselItem {
     background-position: fixed;
     background-size: cover;
     width: 100%;
