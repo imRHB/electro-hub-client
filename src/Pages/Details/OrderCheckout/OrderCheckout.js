@@ -37,7 +37,7 @@ const OrderCheckout = () => {
     };
 
     return (
-        <div>
+        <div className="">
             <Container>
                 <div>
                     <h2 className="text-center fw-bold text-success py-4">Order Checkout</h2>
