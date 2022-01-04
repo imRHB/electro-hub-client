@@ -13,13 +13,13 @@ const TopSlider = () => {
                         src="https://i.ibb.co/ZXdjpKV/oxana-melis-Bu-Auu-EI2ub-M-unsplash.jpg"
                         alt="First slide"
                     />
-                    <Carousel.Caption className="caption">
+                    {/* <Carousel.Caption className="caption">
                         <h1>Upcoming Sports Bikes</h1>
                         <p className="fs-4 ">Prebook is gooing on</p>
                         <Button className="text-white border border-2 px-4 py-2 slider-btn" variant="outside-light">Prebook Now <i className="fas fa-angle-double-right"></i></Button>
-                    </Carousel.Caption>
+                    </Carousel.Caption> */}
                 </Carousel.Item>
-                <Carousel.Item>
+                {/* <Carousel.Item>
                     <img
                         className="d-block w-100 slider-img"
                         src="https://i.ibb.co/vxt79pk/harley-davidson-ee-TJKC-wz34-unsplash.jpg"
@@ -57,7 +57,7 @@ const TopSlider = () => {
                         <p className="fs-4">All kinds of Bikes is available here.</p>
                         <Button className="text-white border border-2 px-4 py-2 slider-btn" variant="outside-light">Order Now <i className="fas fa-angle-double-right"></i></Button>
                     </Carousel.Caption>
-                </Carousel.Item>
+                </Carousel.Item> */}
             </Carousel>
         </div>
     );
