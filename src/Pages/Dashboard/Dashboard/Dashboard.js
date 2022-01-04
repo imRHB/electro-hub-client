@@ -1,9 +1,12 @@
 import React from 'react';
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
 import { Link, Outlet } from "react-router-dom";
+import useAuth from "../../../Hook/useAuth";
 import styles from './Dashboard.module.css';
 
 const Dashboard = () => {
+    const { logOut } = useAuth();
+
     return (
         <div>
             <Container fluid className="p-5">
@@ -13,6 +16,9 @@ const Dashboard = () => {
                             <div className="bg-light rounded-3 py-4 border" style={{ minHeight: '80vh', position: 'sticky', top: '114px' }}>
                                 <Nav variant="light" className={`${'flex-column'} ${styles.dashNav}`}>
                                     <>
+                                        <Link to="/home">
+                                            Home
+                                        </Link>
                                         <Link to="/dashboard">
                                             Dashboard
                                         </Link>
@@ -22,6 +28,7 @@ const Dashboard = () => {
                                         <Link to="my-order">
                                             My Order
                                         </Link>
+                                        <Link to='/login' className="" onClick={logOut}><span className=""></span>Logout</Link>
                                     </>
                                 </Nav>
                             </div>
