@@ -34,16 +34,27 @@ function App() {
             <Route path="/register" element={<Register />} />
 
             {/* Dashboard */}
-            <Route path="/dashboard" element={<Dashboard />} />
+            {/* <Route path="/dashboard" element={<Dashboard />}>
+              <Route path="/manage-order" element={<ManageOrder />} />
+            </Route> */}
+
+            {/* <Route path="/dashboard" element={<Dashboard />} /> */}
+            {/* <Route path="/dashboard/*" element={<Dashboard />} />
             <Route path="/manage-order" element={<ManageOrder />} />
             <Route path="/make-admin" element={<MakeAdmin />} />
             <Route path="/my-order" element={<MyOrder />} />
             <Route path="/add-product" element={<AddProduct />} />
-            <Route path="/add-review" element={<AddReview />} />
+            <Route path="/add-review" element={<AddReview />} /> */}
 
             {/* Details */}
-            <Route path="/product-details" element={<ProductDetails />} />
-            <Route path="/place-order" element={<OrderCheckout />} />
+
+            <Route path="/dashboard" element={<Dashboard />}>
+              <Route path="product-details" element={<ProductDetails />} />
+              <Route path="manage-order" element={<ManageOrder />} />
+              <Route path="my-order" element={<MyOrder />} />
+
+            </Route>
+            <Route path="place-order" element={<OrderCheckout />} />
 
             {/* <Route path="/manage-order" element={<ManageOrder/>}
           <Route path="/dashboard/*" element={<PrivateRoute>
