@@ -1,0 +1,74 @@
+.slider-img {
+  background-blend-mode: overlay;
+}
+.slider-btn {
+  border: 2px;
+}
+.slider-btn:hover {
+  color: black;
+  background-color: #078fa1;
+}
+
+.carousel {
+  width: 100%;
+  min-height: 400px;
+  max-height: 800px;
+}
+.carousel-item img {
+  background-position: fixed;
+  background-size: cover;
+  min-height: 400px;
+  max-height: 100vh;
+  width: 100%;
+}
+.caption {
+  align-items: center;
+  justify-content: center;
+}
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgb(29, 28, 28);
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 576px) {
+  .caption {
+    margin-bottom: 50px;
+  }
+  .carousel-item {
+    background-position: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+  }
+
+  .caption h1 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+}
+
+@media screen and ((min-width: 577px) and (max-width:991px)) {
+  .caption {
+    margin-bottom: 140px;
+  }
+  .caption h1 {
+    font-size: 46px;
+    font-weight: 700;
+  }
+}
+@media screen and (min-width: 992px) {
+  .caption {
+    margin-bottom: 180px;
+  }
+  .caption h1 {
+    font-size: 56px;
+    font-weight: 700;
+  }
+}

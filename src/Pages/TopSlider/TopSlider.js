@@ -1,9 +1,9 @@
 import React from 'react';
 import { Carousel, Button } from 'react-bootstrap';
-import Typical from 'react-typical';
-import './Slider.css';
+import styles from './TopSlider.module.css';
 
-const Carousel = () => {
+
+const TopSlider = () => {
     return (
         <div>
             <Carousel>
@@ -40,7 +40,7 @@ const Carousel = () => {
                     />
 
                     <Carousel.Caption className="caption">
-                        <h1></h1>
+                        <h1>SOmething cooming</h1>
                         <p className="fs-4">We have best and unique bikes.</p>
                         <Button className="text-white border border-2 px-4 py-2 slider-btn" variant="outside-light">Order Now <i className="fas fa-angle-double-right"></i></Button>
                     </Carousel.Caption>
@@ -63,4 +63,4 @@ const Carousel = () => {
     );
 };
 
-export default Carousel;
+export default TopSlider;
