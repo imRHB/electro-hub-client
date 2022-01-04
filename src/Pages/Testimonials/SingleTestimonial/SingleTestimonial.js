@@ -25,8 +25,8 @@ const SingleTestimonial = ({ testimonial }) => {
                         className={`${styles.ratings}`}
                         readonly
                         initialRating={testimonial?.rating}
-                        emptySymbol="far fa-star text-warning m-0 p-0"
-                        fullSymbol="fas fa-star text-warning m-0 p-0"
+                        emptySymbol="far fa-star text-warning ms-1 p-0"
+                        fullSymbol="fas fa-star text-warning ms-1 p-0"
                     ></Rating>
 
                 </div>
