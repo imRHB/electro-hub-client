@@ -10,6 +10,7 @@ import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
 import AuthProvider from './Contexts/AuthProvider/AuthProvider';
 import Login from "./Pages/Login/Login";
 import ManageOrder from "./Pages/Dashboard/ManageOrder/ManageOrder";
+import MakeAdmin from "./Pages/Dashboard/MakeAdmin/MakeAdmin";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/manage-order" element={<ManageOrder />} />
+            <Route path="/make-admin" element={<MakeAdmin />} />
 
             {/* <Route path="/manage-order" element={<ManageOrder/>}
           <Route path="/dashboard/*" element={<PrivateRoute>
