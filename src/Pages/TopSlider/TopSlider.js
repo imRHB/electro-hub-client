@@ -36,7 +36,7 @@ const TopSlider = () => {
                     <Carousel.Caption className={`${styles.caption}`}>
                         <h1>Latest Offers
                             <Typical
-                                steps={[' In Mobile Phones', 1000, ' And Computer Accessories', 1000]}
+                                steps={[' In Mobile Phones', 1000, ' And Computers ', 1000]}
                                 loop={Infinity}
                                 wrapper="b"
                             />
@@ -53,7 +53,13 @@ const TopSlider = () => {
                     />
 
                     <Carousel.Caption className={`${styles.caption}`}>
-                        <h1>Largest Electronics Store</h1>
+                        <h1>Largest
+                            <Typical
+                                steps={[' Electronics Store']}
+                                loop={Infinity}
+                                wrapper="b"
+                            />
+                        </h1>
                         <p className="fs-4">All electronics Accessories is available</p>
                         <Button className={`text-white border border-2 px-4 py-2 ${styles.sliderBtn}`} variant="outside-light">Order Now <i className="fas fa-angle-double-right"></i></Button>
                     </Carousel.Caption>
