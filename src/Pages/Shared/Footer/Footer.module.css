@@ -12,6 +12,7 @@
 }
 .quickNav {
   text-decoration: none;
+  padding-left: 0px;
 }
 .menuItem {
   color: rgb(238, 235, 235);
@@ -22,7 +23,7 @@
   color: rgb(250, 188, 56);
   font-weight: 700;
 }
-.footerlogo {
+.footerLogo {
   width: 220px;
 }
 .footerEnd {

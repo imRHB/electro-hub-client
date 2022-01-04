@@ -32,7 +32,7 @@ const Header = () => {
                 <Container>
                     <Navbar.Brand className={`me-3 ${styles.navBrand}`}>
                         <NavLink to="/home">
-                            <img className="img-fluid" src="https://i.ibb.co/jv7BsTW/electrologo2.png" alt="" width="80%" />
+                            <img className="img-fluid w-75" src="https://i.ibb.co/jv7BsTW/electrologo2.png" alt="" />
                         </NavLink>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" style={{ backgroundColor: '#dae2e273' }} />

@@ -30,7 +30,7 @@ const Footer = () => {
                 <Row xs={1} md={4} lg={4} className="py-5 mx-auto">
                     <Col>
                         <div className={`mb-3 ${styles.footerLogo}`}>
-                            <img className="img-fluid" src="https://i.ibb.co/jv7BsTW/electrologo2.png" alt="" />
+                            <img className="img-fluid w-75" src="https://i.ibb.co/jv7BsTW/electrologo2.png" alt="" />
                         </div>
                         <p><small>Our main concern is to provide best customer service and after sales service.</small></p>
                         <h4 className="text-white">Social Links</h4>
@@ -48,7 +48,7 @@ const Footer = () => {
 
                             {
                                 pages?.map((page, p_id) => (
-                                    <li className='ps-0' key={p_id}>
+                                    <li key={p_id}>
                                         <NavLink className={`${styles.menuItem}`} to={page?.pageLink}>{page?.pageTitle}</NavLink>
                                     </li>
                                 ))
