@@ -9,6 +9,7 @@ import Register from './Pages/Register/Register';
 import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
 import AuthProvider from './Contexts/AuthProvider/AuthProvider';
 import Login from "./Pages/Login/Login";
+import ManageOrder from "./Pages/Dashboard/ManageOrder/ManageOrder";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/manage-order" element={<ManageOrder />} />
+
             {/* <Route path="/manage-order" element={<ManageOrder/>}
           <Route path="/dashboard/*" element={<PrivateRoute>
             <Dashboard />
