@@ -17,7 +17,7 @@ const TopSlider = () => {
                         <Carousel.Caption className={`${styles.caption}`}>
                             <h1>Upcoming Laptop
                                 <Typical
-                                    steps={[' MacBook Pro 13', 1000, ' HP Envy x360', 1000, ' Razer Book 13', 1000]}
+                                    steps={[' MacBook Pro', 1000, ' HP Envy x360', 1000, ' Razer Book 13', 1000]}
                                     loop={Infinity}
                                     wrapper="p"
                                 />
