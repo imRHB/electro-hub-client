@@ -67,7 +67,7 @@ const settings = {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     pauseOnHover: true,
     responsive: [
@@ -119,13 +119,13 @@ const Testimonial = () => {
     // }
 
     return (
-        <div className="my-5 py-5">
+        <div className="mx-auto my-5 py-5">
             <Container>
                 <div className="text-center mx-auto">
                     <h5 className="">Testimonials and reviews</h5>
                     <h2 className="text-secondary fw-bold">What Our Customers Say</h2>
                 </div>
-                <div className="mx-2 py-3">
+                <div className="mx-3 py-3">
                     <Slider {...settings}>
 
                         {
