@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './Pages/About/About';
-import Home from './Pages/Home/Home/Home';
+// import Home from './Pages/Home/Home/Home';
 import NotFound from './Pages/NotFound/NotFound';
 import Products from './Pages/Products/Products/Products';
 import Contact from './Pages/Contact/Contact';
@@ -14,6 +14,7 @@ import MakeAdmin from "./Pages/Dashboard/MakeAdmin/MakeAdmin";
 import MyOrder from "./Pages/Dashboard/MyOrder/MyOrder";
 import AddProduct from "./Pages/Dashboard/AddProduct/AddProduct";
 import AddReview from "./Pages/Dashboard/AddReview/AddReview";
+import Home from "./Pages/Landing/Home/Home";
 
 function App() {
   return (
