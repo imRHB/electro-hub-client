@@ -52,12 +52,21 @@ const Login = () => {
                                     <input type="email" className="input" name="email" placeholder="email" onChange={handleOnChange} />
                                 </div>
                             </div>
-                            <div className="input-div pass">
+                            {/* <div className="input-div pass">
                                 <div className="i">
                                     <i className="fas fa-lock"></i>
                                 </div>
                                 <div className="div">
 
+                                    <input type="password" className="input" name="password" placeholder="password" onChange={handleOnChange} />
+                                </div>
+                            </div> */}
+                            <div className="input-div pass">
+                                <div className="i">
+                                    <i className="fas fa-lock"></i>
+                                </div>
+                                <div className="div">
+                                    <h5>Password</h5>
                                     <input type="password" className="input" name="password" placeholder="password" onChange={handleOnChange} />
                                 </div>
                             </div>
@@ -70,6 +79,7 @@ const Login = () => {
 
                         </form>
                         <input onClick={handleGoogleSignIn} type="submit" className="submit-btn" value="Google Sign In" />
+
                         {/* {user?.email && <div class="alert alert-primary" role="alert">
                             LogIn Successfully
                         </div>}
