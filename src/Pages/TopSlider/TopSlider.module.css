@@ -1,10 +1,10 @@
-.slider-img {
+.sliderImg {
   background-blend-mode: overlay;
 }
-.slider-btn {
+.sliderBtn {
   border: 2px;
 }
-.slider-btn:hover {
+.sliderBtn:hover {
   color: black;
   background-color: #078fa1;
 }
