@@ -22,6 +22,9 @@
   color: rgb(250, 188, 56);
   font-weight: 700;
 }
+.footerlogo {
+  width: 220px;
+}
 .footerEnd {
   background-color: #072c3b;
 }
