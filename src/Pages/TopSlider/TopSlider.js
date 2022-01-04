@@ -6,7 +6,7 @@ import styles from './TopSlider.module.css';
 const TopSlider = () => {
     return (
         <div>
-            <Carousel className={`${styles.carouselSection}`}>
+            {/* <Carousel className={`${styles.carouselSection}`}>
                 <Carousel.Item className={`${styles.singleCarouselItem}`}>
                     <img
                         className={`d-block w-100 ${styles.sliderImg}`}
@@ -64,7 +64,7 @@ const TopSlider = () => {
                         <Button className={`text-white border border-2 px-4 py-2 ${styles.sliderBtn}`} variant="outside-light">Order Now <i className="fas fa-angle-double-right"></i></Button>
                     </Carousel.Caption>
                 </Carousel.Item>
-            </Carousel>
+            </Carousel> */}
         </div>
     );
 };
