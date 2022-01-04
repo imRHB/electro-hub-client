@@ -14,6 +14,7 @@ import MyOrder from "./Pages/Dashboard/MyOrder/MyOrder";
 import AddProduct from "./Pages/Dashboard/AddProduct/AddProduct";
 import AddReview from "./Pages/Dashboard/AddReview/AddReview";
 import NotFound from './Pages/NotFound/NotFound';
+import ProductDetails from "./Pages/Details/ProductDetails/ProductDetails";
 
 function App() {
   return (
@@ -38,6 +39,9 @@ function App() {
             <Route path="/my-order" element={<MyOrder />} />
             <Route path="/add-product" element={<AddProduct />} />
             <Route path="/add-review" element={<AddReview />} />
+
+            {/* Details */}
+            <Route path="/product-details" element={<ProductDetails />} />
 
             {/* <Route path="/manage-order" element={<ManageOrder/>}
           <Route path="/dashboard/*" element={<PrivateRoute>
