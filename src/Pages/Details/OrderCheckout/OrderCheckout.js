@@ -39,7 +39,7 @@ const OrderCheckout = () => {
     };
 
     return (
-        <div className={`${'my-5'} ${styles.checkoutContainer}`}>
+        <div className={`${''} ${styles.checkoutContainer}`}>
             <Header />
             <Container>
                 <div>
@@ -52,8 +52,8 @@ const OrderCheckout = () => {
                             <p className="fs-4 fw-bold text-center text-info">Product Information</p>
 
                             <div className="mx-3">
-                                <div className="text-center">
-                                    <img src={orderedProduct.img} alt="" className="w-50 border rounded-3" />
+                                <div className="">
+                                    <img src={orderedProduct.img} alt="" className="mx-auto w-50 border rounded-3" />
                                 </div>
                                 <Row xs={2} sm={2} md={2} lg={2} className="my-4">
                                     <Col className="col-3 col-sm-3 col-md-3 col-lg-3">

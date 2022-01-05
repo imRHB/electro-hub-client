@@ -18,9 +18,9 @@ const ProductDetails = () => {
     }, [productId]);
 
     return (
-        <div className="my-5">
+        <div>
             <Header />
-            <Container>
+            <Container className="my-5 py-5">
                 {/* <h2 className="text-center fs-1 fw-bold text-secondary my-5">Product Details</h2> */}
 
                 <Row xs={1} md={1} xl={2} className="g-5">
