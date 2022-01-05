@@ -7,7 +7,7 @@ const ProductDetails = () => {
 
     const [product, setProduct] = useState({});
 
-    const { _id, title, img, description, price } = product;
+    const { _id, title, img, specifications, description, price } = product;
 
     useEffect(() => {
         fetch(`http://localhost:5000/products/${productId}`)
@@ -23,12 +23,16 @@ const ProductDetails = () => {
                 <Row xs={1} md={1} xl={2} className="g-5">
                     <Col className="col-md-12 col-lg-6 col-xl-6">
                         <div className="rounded-3">
-                            <img className="img-fluid rounded-3" src={img} alt="" />
+                            <img className="img-fluid rounded-3 w-100" src={img} alt="" />
                         </div>
                     </Col>
 
                     <Col className="col-md-12 col-lg-6 col-xl-6">
                         <h1 className="fs-2 fw-bold text-info text-uppercase">{title}</h1>
+
+                        <div className="bg-light rounded-3 p-4 my-4">
+                            <p>{specifications}</p>
+                        </div>
 
                         <div className="bg-light rounded-3 p-4 my-4">
                             <p>{description}</p>

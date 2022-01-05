@@ -18,8 +18,6 @@ import ProductDetails from "./Pages/Details/ProductDetails/ProductDetails";
 import OrderCheckout from "./Pages/Details/OrderCheckout/OrderCheckout";
 import ManageProduct from "./Pages/Dashboard/ManageProduct/ManageProduct";
 import Home from "./Pages/Home/Home/Home";
-import Header from "./Pages/Shared/Header/Header";
-import Footer from "./Pages/Shared/Footer/Footer";
 
 function App() {
   return (

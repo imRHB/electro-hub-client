@@ -27,7 +27,7 @@ const AddProduct = () => {
         <div>
             <Container>
                 <div className="mb-4">
-                    <h3 className="fw-bold">Add Bouquet</h3>
+                    <h3 className="fw-bold">Add Product</h3>
                 </div>
 
                 <div>

@@ -55,13 +55,13 @@ const OrderCheckout = () => {
                                 <Row xs={2} sm={2} md={2} lg={2} className="my-4">
                                     <Col className="col-3 col-sm-3 col-md-3 col-lg-3">
                                         <p className="fs-5 fw-bold">Name</p>
-                                        <p className="fs-5 fw-bold">Type</p>
+                                        <p className="fs-5 fw-bold">Category</p>
                                         <p className="fs-5 fw-bold">Price</p>
                                     </Col>
 
                                     <Col className="col-9 col-sm-9 col-md-9 col-lg-9">
                                         <p className="fs-5">{orderedProduct.title}</p>
-                                        <p className="fs-5">Bouquet</p>
+                                        <p className="fs-5">{orderedProduct.category}</p>
                                         <p className="fs-5">${orderedProduct.price}</p>
                                     </Col>
                                 </Row>
