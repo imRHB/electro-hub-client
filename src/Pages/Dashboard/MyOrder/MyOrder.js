@@ -7,7 +7,7 @@ const MyOrder = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        const myOrderUri = `/${user.email}`;
+        const myOrderUri = `https://desolate-beyond-60013.herokuapp.com/orders/${user.email}`;
 
         fetch(myOrderUri)
             .then(res => res.json())
@@ -18,7 +18,7 @@ const MyOrder = () => {
         const cancelConfirmation = window.confirm('Do you want to cancel your order?');
 
         if (cancelConfirmation) {
-            const productUri = `/${productId}`;
+            const productUri = `https://desolate-beyond-60013.herokuapp.com/products/${productId}`;
             fetch(productUri, {
                 method: 'DELETE'
             })
