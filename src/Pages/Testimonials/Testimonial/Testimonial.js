@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { Col, Container, Row, Spinner } from 'react-bootstrap';
+import React, { useEffect, } from 'react';
+import { Container, Spinner } from 'react-bootstrap';
 import SingleTestimonial from '../SingleTestimonial/SingleTestimonial';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
-import useAuth from '../../../Hook/useAuth';
 // import styles from './Testimonial.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { getReviews } from '../../../redux/slices/reviewSlice';
@@ -18,7 +17,7 @@ const settings = {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 2000,
     pauseOnHover: true,
     responsive: [
