@@ -5,7 +5,10 @@
     align-items: center;
 }
 .reviewForm input, textarea {
-    /* width: 360px; */
+    width: 360px;
     margin: 8px;
     padding: 4px;
+}
+.ratingArea {
+    margin: 0 auto;
 }

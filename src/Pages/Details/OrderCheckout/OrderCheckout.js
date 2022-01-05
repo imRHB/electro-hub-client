@@ -15,13 +15,13 @@ const OrderCheckout = () => {
     const [orderedProduct, setOrderedProduct] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${productId}`)
+        fetch(`https://desolate-beyond-60013.herokuapp.com/products/${productId}`)
             .then(res => res.json())
             .then(data => setOrderedProduct(data));
     }, [productId]);
 
     const onSubmit = data => {
-        fetch('http://localhost:5000/orders/', {
+        fetch('https://desolate-beyond-60013.herokuapp.com/orders/', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -55,13 +55,13 @@ const OrderCheckout = () => {
                                 <Row xs={2} sm={2} md={2} lg={2} className="my-4">
                                     <Col className="col-3 col-sm-3 col-md-3 col-lg-3">
                                         <p className="fs-5 fw-bold">Name</p>
-                                        <p className="fs-5 fw-bold">Type</p>
+                                        <p className="fs-5 fw-bold">Category</p>
                                         <p className="fs-5 fw-bold">Price</p>
                                     </Col>
 
                                     <Col className="col-9 col-sm-9 col-md-9 col-lg-9">
                                         <p className="fs-5">{orderedProduct.title}</p>
-                                        <p className="fs-5">Bouquet</p>
+                                        <p className="fs-5">{orderedProduct.category}</p>
                                         <p className="fs-5">${orderedProduct.price}</p>
                                     </Col>
                                 </Row>

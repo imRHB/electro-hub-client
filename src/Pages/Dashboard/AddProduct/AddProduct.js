@@ -7,7 +7,7 @@ const AddProduct = () => {
     const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = data => {
-        fetch('http://localhost:5000/add-product', {
+        fetch('https://desolate-beyond-60013.herokuapp.com/add-product', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -27,7 +27,7 @@ const AddProduct = () => {
         <div>
             <Container>
                 <div className="mb-4">
-                    <h3 className="fw-bold">Add Bouquet</h3>
+                    <h3 className="fw-bold">Add Product</h3>
                 </div>
 
                 <div>

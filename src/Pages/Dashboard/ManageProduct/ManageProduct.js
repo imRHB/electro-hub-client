@@ -5,7 +5,7 @@ const ManageProduct = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://desolate-beyond-60013.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [products]);
@@ -14,7 +14,7 @@ const ManageProduct = () => {
         const deleteConfirmation = window.confirm('Do you want to delete product?');
 
         if (deleteConfirmation) {
-            const productUri = `http://localhost:5000/products/${productId}`;
+            const productUri = `https://desolate-beyond-60013.herokuapp.com/products/${productId}`;
 
             fetch(productUri, {
                 method: 'DELETE'
