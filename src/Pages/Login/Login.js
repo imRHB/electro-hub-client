@@ -25,10 +25,17 @@ const Login = () => {
         e.preventDefault();
     }
 
+
     const handleGoogleSignIn = () => {
         alert('google sign in');
         signInWithGogle(location, history);
     }
+
+    // const handleGoogleSignIn = () => {
+    //     alert('google sign in');
+    //     signInWithGogle(location, history);
+    // }
+
     return (
         <div className={`${styles.login}`}>
             <div className={`${styles.loginContent}`}>
@@ -66,7 +73,11 @@ const Login = () => {
 
                     </form>
                     {/* <button onClick={handleGoogleSignIn} type="button" className={`${'btn btn-primary mt-2'}`}>Google SignIn</button> */}
+
                     <input onClick={handleGoogleSignIn} type="submit" className={`${'btn btn-primary mt-2'}`} value="Google Sign In" />
+
+                    <input onClick={signInWithGogle} type="submit" className={`${'btn btn-primary mt-2'}`} value="Google Sign In" />
+
 
                     {user?.email && <div class="alert alert-primary" role="alert">
                         LogIn Successfully
