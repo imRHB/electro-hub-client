@@ -9,6 +9,7 @@ const Login = () => {
     const [loginData, setLoginData] = useState({});
     const location = useLocation();
     const history = useNavigate();
+
     const { user, loginUser, signInWithGogle, isLoading, authError } = useAuth();
     const handleOnChange = e => {
         const field = e.target.name;
@@ -24,9 +25,10 @@ const Login = () => {
         e.preventDefault();
     }
 
-    const handleGoogleSignIn = () => {
-        signInWithGogle(location, history);
-    }
+    // const handleGoogleSignIn = () => {
+    //     alert('google sign in');
+    //     signInWithGogle(location, history);
+    // }
     return (
         <div className={`${styles.login}`}>
             <div className={`${styles.loginContent}`}>
@@ -59,11 +61,12 @@ const Login = () => {
 
                         <button type="button" className={`${'btn btn-primary'}`}>Login</button>
                         <br />
-                        <button onClick={handleGoogleSignIn} type="button" className={`${'btn btn-primary mt-2'}`}>Google SignIn</button>
+
 
 
                     </form>
-
+                    {/* <button onClick={handleGoogleSignIn} type="button" className={`${'btn btn-primary mt-2'}`}>Google SignIn</button> */}
+                    <input onClick={signInWithGogle} type="submit" className={`${'btn btn-primary mt-2'}`} value="Google Sign In" />
 
                     {user?.email && <div class="alert alert-primary" role="alert">
                         LogIn Successfully
