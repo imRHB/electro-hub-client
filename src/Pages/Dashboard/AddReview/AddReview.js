@@ -20,7 +20,7 @@ const AddReview = () => {
         data.email = user?.email;
         data.rating = rating;
 
-        fetch('http://localhost:5000/add-review', {
+        fetch('https://desolate-beyond-60013.herokuapp.com/add-review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

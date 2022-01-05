@@ -10,7 +10,7 @@ const ProductDetails = () => {
     const { _id, title, img, specifications, description, price } = product;
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${productId}`)
+        fetch(`https://desolate-beyond-60013.herokuapp.com/products/${productId}`)
             .then(res => res.json())
             .then(data => setProduct(data));
     }, [productId]);

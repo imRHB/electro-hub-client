@@ -15,13 +15,13 @@ const OrderCheckout = () => {
     const [orderedProduct, setOrderedProduct] = useState({});
 
     useEffect(() => {
-        fetch(`http://localhost:5000/products/${productId}`)
+        fetch(`https://desolate-beyond-60013.herokuapp.com/products/${productId}`)
             .then(res => res.json())
             .then(data => setOrderedProduct(data));
     }, [productId]);
 
     const onSubmit = data => {
-        fetch('http://localhost:5000/orders/', {
+        fetch('https://desolate-beyond-60013.herokuapp.com/orders/', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
