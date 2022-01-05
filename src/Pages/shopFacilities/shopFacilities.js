@@ -28,7 +28,6 @@ const facilities = [
 const ShopFacilities = () => {
     return (
         <div className={`my-3 ${styles.statusSection}`}>
-
             <Container>
                 <div className="text-center mx-auto">
                     <h5 className={`${styles.shortInfo}`}>Why Two Wheels Zone</h5>
@@ -37,15 +36,17 @@ const ShopFacilities = () => {
                 <div className="py-5 px-auto mx-auto">
                     <Row xs={1} md={2} lg={4}>
                         {
-                            facilities?.map((facility, f_id) => <div key={f_id}>
-                                <Col className="mx-auto my-3">
-                                    <div className={`d-flex align-items-center justify-content-center flex-column mx-auto p-3 text-white rounded-3 ${styles.status}`}>
-                                        <img className="img-fluid mx-auto" width="30%" src={facility?.image} alt="" />
-                                        <h5 className="pt-3">{facility?.status}</h5>
-                                        <p>{facility?.desc}</p>
-                                    </div>
-                                </Col>
-                            </div>)
+                            facilities?.map((facility, f_id) => (
+                                <div key={f_id}>
+                                    <Col className="mx-auto my-3">
+                                        <div className={`d-flex align-items-center justify-content-center flex-column mx-auto p-3 text-white rounded-3 ${styles.status}`}>
+                                            <img className="img-fluid mx-auto" width="30%" src={facility?.image} alt="" />
+                                            <h5 className="pt-3">{facility?.status}</h5>
+                                            <p>{facility?.desc}</p>
+                                        </div>
+                                    </Col>
+                                </div>
+                            ))
                         }
 
                     </Row>
