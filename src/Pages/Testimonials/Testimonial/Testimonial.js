@@ -7,58 +7,58 @@ import Slider from 'react-slick';
 import useAuth from '../../../Hook/useAuth';
 // import styles from './Testimonial.module.css';
 
-const testimonials = [
-    {
-        name: "Nasim Bin Kamal ",
-        review: "Good quality products.",
-        rating: "5"
-    },
-    {
-        name: "Nasim Sagar ",
-        review: "Good quality products.",
-        rating: "4"
-    },
-    {
-        name: "Test User",
-        review: "Good quality products.",
-        rating: 4
-    },
-    {
-        name: "Test User",
-        review: "Good quality products.",
-        rating: 4
-    },
-    {
-        name: "Test User",
-        review: "Good quality products.",
-        rating: 4
-    },
-    {
-        name: "Test User",
-        review: "Good quality products.",
-        rating: 4
-    },
-    {
-        name: "Test User",
-        review: "Good quality products.",
-        rating: 4
-    },
-    {
-        name: "Test User",
-        review: "Good quality products.",
-        rating: 4
-    },
-    {
-        name: "Test User",
-        review: "Good quality products.",
-        rating: 4
-    },
-    {
-        name: "Test User",
-        review: "Good quality products.",
-        rating: 4
-    }
-]
+// const testimonials = [
+//     {
+//         name: "Nasim Bin Kamal ",
+//         review: "Good quality products.",
+//         rating: "5"
+//     },
+//     {
+//         name: "Nasim Sagar ",
+//         review: "Good quality products.",
+//         rating: "4"
+//     },
+//     {
+//         name: "Test User",
+//         review: "Good quality products.",
+//         rating: 4
+//     },
+//     {
+//         name: "Test User",
+//         review: "Good quality products.",
+//         rating: 4
+//     },
+//     {
+//         name: "Test User",
+//         review: "Good quality products.",
+//         rating: 4
+//     },
+//     {
+//         name: "Test User",
+//         review: "Good quality products.",
+//         rating: 4
+//     },
+//     {
+//         name: "Test User",
+//         review: "Good quality products.",
+//         rating: 4
+//     },
+//     {
+//         name: "Test User",
+//         review: "Good quality products.",
+//         rating: 4
+//     },
+//     {
+//         name: "Test User",
+//         review: "Good quality products.",
+//         rating: 4
+//     },
+//     {
+//         name: "Test User",
+//         review: "Good quality products.",
+//         rating: 4
+//     }
+// ]
 
 const settings = {
     dots: true,
