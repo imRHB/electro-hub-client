@@ -3,6 +3,8 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
 import { useNavigate, useParams } from 'react-router-dom'
 import useAuth from "../../../Hook/useAuth";
+import Footer from "../../Shared/Footer/Footer";
+import Header from "../../Shared/Header/Header";
 import styles from './OrderCheckout.module.css';
 // orderCheckout
 
@@ -37,7 +39,8 @@ const OrderCheckout = () => {
     };
 
     return (
-        <div className="">
+        <div className={`${'my-5'} ${styles.checkoutContainer}`}>
+            <Header />
             <Container>
                 <div>
                     <h2 className="text-center fw-bold text-success py-4">Order Checkout</h2>
@@ -96,6 +99,7 @@ const OrderCheckout = () => {
                     </Col>
                 </Row>
             </Container>
+            <Footer />
         </div>
     );
 };

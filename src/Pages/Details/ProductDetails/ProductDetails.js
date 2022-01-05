@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Link, useParams } from "react-router-dom";
+import Footer from "../../Shared/Footer/Footer";
+import Header from "../../Shared/Header/Header";
 
 const ProductDetails = () => {
     const { productId } = useParams();
@@ -16,9 +18,10 @@ const ProductDetails = () => {
     }, [productId]);
 
     return (
-        <div>
+        <div className="my-5">
+            <Header />
             <Container>
-                <h2 className="text-center fs-1 fw-bold text-secondary my-5">Product Details</h2>
+                {/* <h2 className="text-center fs-1 fw-bold text-secondary my-5">Product Details</h2> */}
 
                 <Row xs={1} md={1} xl={2} className="g-5">
                     <Col className="col-md-12 col-lg-6 col-xl-6">
@@ -35,6 +38,7 @@ const ProductDetails = () => {
                         </div>
 
                         <div className="bg-light rounded-3 p-4 my-4">
+                            <h4>Description</h4>
                             <p>{description}</p>
                         </div>
 
@@ -51,6 +55,7 @@ const ProductDetails = () => {
                     </Col>
                 </Row>
             </Container>
+            <Footer />
         </div>
     );
 };

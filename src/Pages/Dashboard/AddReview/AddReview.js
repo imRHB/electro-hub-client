@@ -2,11 +2,15 @@ import React, { useState } from 'react';
 import { Container } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import ReactStars from 'react-rating-stars-component';
+import { addReview } from '../../../redux/slices/reviewSlice';
+import { useDispatch } from 'react-redux';
 import useAuth from "../../../Hook/useAuth";
 import styles from './AddReview.module.css';
 
 const AddReview = () => {
     const [rating, setRating] = useState('');
+
+    const dispatch = useDispatch();
 
     const { user } = useAuth();
     const { register, handleSubmit, reset } = useForm();
@@ -20,7 +24,10 @@ const AddReview = () => {
         data.email = user?.email;
         data.rating = rating;
 
-        fetch('https://desolate-beyond-60013.herokuapp.com/add-review', {
+        dispatch(addReview(data));
+        reset();
+
+        /* fetch('https://desolate-beyond-60013.herokuapp.com/add-review', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -33,7 +40,7 @@ const AddReview = () => {
             });
 
         alert('Your review added. Thanks for give us review.');
-        reset();
+        reset(); */
     };
 
     return (
