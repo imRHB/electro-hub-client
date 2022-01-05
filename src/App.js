@@ -1,4 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AuthProvider from './Contexts/AuthProvider/AuthProvider';
 import Landing from "./Pages/Landing/Landing";
@@ -24,6 +26,7 @@ function App() {
     <div className="">
       <AuthProvider>
         <Router>
+          <ToastContainer />
           <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/home" element={<Landing />} />
