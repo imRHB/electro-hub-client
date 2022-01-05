@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from "react-bootstrap";
+import Footer from "../../Shared/Footer/Footer";
+import Header from "../../Shared/Header/Header";
 import SingleProduct from "../SingleProduct/SingleProduct";
 
 const Products = () => {
@@ -14,6 +16,7 @@ const Products = () => {
 
     return (
         <div>
+            <Header />
             <Container>
                 <h2 className="text-center fs-1 fw-bold text-secondary my-5">Available Products</h2>
                 <Row xs={1} md={2} lg={3} xl={3} className="g-4">
@@ -25,6 +28,7 @@ const Products = () => {
                     }
                 </Row>
             </Container>
+            <Footer />
         </div>
     );
 };

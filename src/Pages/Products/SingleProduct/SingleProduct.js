@@ -3,13 +3,12 @@ import { Button, Card, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import styles from './SingleProduct.module.css';
 
-
 const SingleProduct = (props) => {
     const { _id, img, title, description, price } = props.product;
 
     return (
         <Col>
-            <Card className={`${'h-100 rounded-3 text-center'} ${styles.productCard}`}>
+            <Card className={`${'h-100 border-0 rounded-3 text-center'} ${styles.productCard}`}>
                 <Card.Img variant="top" src={img} style={{ width: '75%', margin: '0 auto' }} className="p-3" />
                 <Card.Body>
                     <Card.Title>{title}</Card.Title>
