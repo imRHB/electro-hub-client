@@ -34,7 +34,7 @@ const SingleTestimonial = ({ testimonial }) => {
                 <div className={`py-1 ${styles.commentSection}`}>
                     <small>{testimonial?.comment}</small>
                 </div>
-                <div className="py-3 mx-auto">
+                <div className="pt-3 mx-auto">
                     <Rating
                         className={`${styles.ratings}`}
                         readonly
