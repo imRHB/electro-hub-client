@@ -25,6 +25,7 @@ const Login = () => {
     }
 
     const handleGoogleSignIn = () => {
+        alert('google sign in');
         signInWithGogle(location, history);
     }
     return (
