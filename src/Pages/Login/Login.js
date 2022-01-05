@@ -1,5 +1,7 @@
 import React from 'react';
-
+import styles from './Login.module.css';
+import img1 from './img/img-login.svg';
+import { NavLink } from 'react-router-dom';
 const Login = () => {
     return (
         <div className={`${styles.login}`}>
