@@ -59,11 +59,11 @@ const Login = () => {
 
                         <button type="button" className={`${'btn btn-primary'}`}>Login</button>
                         <br />
-
+                        <button onClick={handleGoogleSignIn} type="button" className={`${'btn btn-primary mt-2'}`}>Google SignIn</button>
 
 
                     </form>
-                    <button onClick={handleGoogleSignIn} type="button" className={`${'btn btn-primary mt-2'}`}>Google SignIn</button>
+
 
                     {user?.email && <div class="alert alert-primary" role="alert">
                         LogIn Successfully
