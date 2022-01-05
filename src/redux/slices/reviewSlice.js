@@ -32,7 +32,7 @@ export const addReview = createAsyncThunk(
 const reviewSlice = createSlice({
     name: 'reviews',
     initialState: {
-        reviews: [],
+        allReviews: [],
         isLoading: false
     },
     reducers: {
@@ -46,7 +46,7 @@ const reviewSlice = createSlice({
             state.isLoading = true;
         })
         builder.addCase(getReviews.fulfilled, (state, action) => {
-            state.reviews = action.payload;
+            state.allReviews = action.payload;
             state.isLoading = false;
         })
         builder.addCase(getReviews.rejected, (state) => {
@@ -58,7 +58,7 @@ const reviewSlice = createSlice({
             state.isLoading = true;
         })
         builder.addCase(addReview.fulfilled, (state, action) => {
-            state.reviews.push(action.payload);
+            state.allReviews.push(action.payload);
             toast.success(`Successfully Reviewed`, {
                 position: "bottom-left",
                 autoClose: 2000,

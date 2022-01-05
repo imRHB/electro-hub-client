@@ -4,7 +4,7 @@ import reviewReducer from './slices/reviewSlice';
 
 export const store = configureStore({
     reducer: {
-        testimonials: reviewReducer
+        reviews: reviewReducer
 
     },
 })
