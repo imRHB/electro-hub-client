@@ -6,7 +6,7 @@ import styles from './SingleTestimonial.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from '@fortawesome/free-regular-svg-icons';
 
-const userIcon = <FontAwesomeIcon icon={faUserCircle} />
+const userIcon = <FontAwesomeIcon icon={faUserCircle} className='fs-2' />
 
 const SingleTestimonial = ({ testimonial }) => {
     const { user } = useAuth();
