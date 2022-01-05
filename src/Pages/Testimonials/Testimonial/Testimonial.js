@@ -51,7 +51,7 @@ const settings = {
 
 const Testimonial = () => {
     const dispatch = useDispatch();
-    const { reviews, isLoading } = useSelector(state => state.reviews);
+    const { allReviews, isLoading } = useSelector(state => state.reviews);
 
     useEffect(() => {
         dispatch(getReviews());
@@ -79,7 +79,7 @@ const Testimonial = () => {
                     <Slider {...settings}>
 
                         {
-                            reviews?.map((testimonial, t_id) => (<SingleTestimonial key={t_id} testimonial={testimonial} />))
+                            allReviews?.map((testimonial, t_id) => (<SingleTestimonial key={t_id} testimonial={testimonial} />))
                         }
 
                     </Slider>
