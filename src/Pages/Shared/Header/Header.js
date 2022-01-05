@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Nav, Navbar, Button } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import styles from './Header.module.css';
 import { FaSignOutAlt } from "react-icons/fa";
 import useAuth from '../../../Hook/useAuth';
@@ -27,7 +27,14 @@ const pages = [
 
 
 const Header = () => {
-    const { user } = useAuth();
+    const { user, logOut } = useAuth();
+
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    const handleLogOut = () => {
+        logOut(location, navigate);
+    }
     return (
         <div>
             <Navbar collapseOnSelect className={`${styles.navbarBg}`} bg="" variant="light" fixed="top" expand="lg" >
@@ -56,7 +63,9 @@ const Header = () => {
                                     <>
                                         <NavLink className="me-3 text-decoration-none text-white" to="/dashboard">Dashboard</NavLink>
                                         <small className="text-white mx-auto pe-3 pt-1">{user?.displayName}</small>
-                                        <Button className="rounded-pill px-4 border-0" size="sm" variant="danger" >
+                                        <Button
+                                            onClick={handleLogOut}
+                                            className="rounded-pill px-4 border-0" size="sm" variant="danger" >
                                             <FaSignOutAlt className="me-2" />
                                             Log Out
                                         </Button>
@@ -69,11 +78,6 @@ const Header = () => {
                                 )
 
                             }
-
-
-
-
-
 
                         </Nav>
                     </Navbar.Collapse>
