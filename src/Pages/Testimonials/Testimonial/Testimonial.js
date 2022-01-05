@@ -104,7 +104,7 @@ const Testimonial = () => {
     const { isLoading } = useAuth();
 
     useEffect(() => {
-        fetch('https://serene-fjord-11430.herokuapp.com/reviews')
+        fetch('https://desolate-beyond-60013.herokuapp.com/reviews')
             .then(res => res.json())
             .then(data => setTestimonials(data));
     }, []);
