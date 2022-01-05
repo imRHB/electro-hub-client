@@ -10,7 +10,7 @@ const TopSlider = () => {
                 <Carousel.Item className={`${styles.sliderItem}`}>
                     <img
                         className={`d-block w-100 ${styles.sliderImg}`}
-                        src="https://i.ibb.co/wShSkB4/laptop.jpg"
+                        src="https://i.ibb.co/LdzmtsQ/asusrog.jpg"
                         alt="First slide"
                     />
                     <Carousel.Caption className={`${styles.caption}`}>
