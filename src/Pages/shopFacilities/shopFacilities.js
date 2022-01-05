@@ -32,6 +32,7 @@ const facilities = [
 const ShopFacilities = () => {
     return (
         <div className={`my-3 ${styles.statusSection}`}>
+
             <Container>
                 <div className="text-center mx-auto">
                     <h5 className={`${styles.shortInfo}`}>Why Two Wheels Zone</h5>
