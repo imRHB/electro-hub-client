@@ -39,9 +39,9 @@ const OrderCheckout = () => {
     };
 
     return (
-        <div className={`${''} ${styles.checkoutContainer}`}>
+        <div>
             <Header />
-            <Container>
+            <Container className="mb-5">
                 <div>
                     <h2 className="text-center fw-bold text-success py-4">Order Checkout</h2>
                 </div>
@@ -71,13 +71,14 @@ const OrderCheckout = () => {
                             </div>
                         </div>
 
-                        {/* <div className="my-3 px-2 py-4 rounded-3 border">
-                            <p className="text-center fs-4 fw-bold text-warning">Product Disclaimer <span>{disclaimerIcon}</span></p>
+                        <div className="my-3 px-2 py-4 rounded-3 border">
+                            <p className="text-center fs-4 fw-bold text-warning">Product Disclaimer <span></span></p>
                             <ul className="text-muted">
                                 <li>The actual product may vary from the images shown on the website</li>
                                 <li>The actual colours may be vary from those shown depending on the device you are using to view the product or the angle of the item is photographed</li>
+                                <li>Warranty and policy provided by the company</li>
                             </ul>
-                        </div> */}
+                        </div>
                     </Col>
 
                     <Col>
