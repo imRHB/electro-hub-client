@@ -2,7 +2,8 @@ import React from 'react';
 import { Container, Nav, Navbar, Button } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import styles from './Header.module.css';
-// import { FaSignOutAlt } from "react-icons/fa";
+import { FaSignOutAlt } from "react-icons/fa";
+import useAuth from '../../../Hook/useAuth';
 
 
 const pages = [
@@ -11,21 +12,22 @@ const pages = [
         pageLink: "/home"
     },
     {
+        pageTitle: "Shop",
+        pageLink: "/shop"
+    },
+    {
         pageTitle: "About",
         pageLink: "/about"
     },
     {
         pageTitle: "Contact",
         pageLink: "/contact"
-    },
-    {
-        pageTitle: "",
-        pageLink: ""
-    },
-]
+    }
+];
 
 
 const Header = () => {
+    const { user } = useAuth();
     return (
         <div>
             <Navbar collapseOnSelect className={`${styles.navbarBg}`} bg="" variant="light" fixed="top" expand="lg" >
@@ -45,21 +47,33 @@ const Header = () => {
                                 ))
                             }
 
-                            {/* <NavLink className="mx-2 text-decoration-none text-white fs-5" to="/products">All Bikes</NavLink>
-                            <NavLink className="mx-2 text-decoration-none text-white fs-5" to="/about">About</NavLink>
-                            <NavLink className="mx-2 text-decoration-none text-white fs-5" to="/contact">Contact</NavLink> */}
+
 
                         </Nav>
                         <Nav>
-                            {/* <small className="text-white mx-auto pe-3 pt-1">{user?.displayName}</small> */}
-                            <NavLink className="me-3 text-decoration-none text-white" to="/dashboard">Dashboard</NavLink>
+                            {
+                                user?.email ? (
+                                    <>
+                                        <NavLink className="me-3 text-decoration-none text-white" to="/dashboard">Dashboard</NavLink>
+                                        <small className="text-white mx-auto pe-3 pt-1">{user?.displayName}</small>
+                                        <Button className="rounded-pill px-4 border-0" size="sm" variant="danger" >
+                                            <FaSignOutAlt className="me-2" />
+                                            Log Out
+                                        </Button>
+                                    </>
+                                ) : (
+                                    <>
+                                        <NavLink className="mx-2 text-decoration-none text-white" to="/register">Register</NavLink>
+                                        <NavLink className="mx-2 text-decoration-none text-white" to="/login">Login</NavLink>
+                                    </>
+                                )
+
+                            }
 
 
-                            <NavLink className="mx-2 text-decoration-none text-white" to="/register">Register</NavLink>
-                            <NavLink className="mx-2 text-decoration-none text-white" to="/login">Login</NavLink>
-                            <Button className="rounded-pill px-4 border-0" size="sm" variant="danger" >
-                                {/* <FaSignOutAlt className="me-2" /> */}
-                                Log Out</Button>
+
+
+
 
                         </Nav>
                     </Navbar.Collapse>
