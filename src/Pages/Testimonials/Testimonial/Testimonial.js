@@ -6,59 +6,10 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import useAuth from '../../../Hook/useAuth';
 // import styles from './Testimonial.module.css';
+import { useDispatch, useSelector } from 'react-redux';
+import { getReviews } from '../../../redux/slices/reviewSlice';
 
-// const testimonials = [
-//     {
-//         name: "Nasim Bin Kamal ",
-//         review: "Good quality products.",
-//         rating: "5"
-//     },
-//     {
-//         name: "Nasim Sagar ",
-//         review: "Good quality products.",
-//         rating: "4"
-//     },
-//     {
-//         name: "Test User",
-//         review: "Good quality products.",
-//         rating: 4
-//     },
-//     {
-//         name: "Test User",
-//         review: "Good quality products.",
-//         rating: 4
-//     },
-//     {
-//         name: "Test User",
-//         review: "Good quality products.",
-//         rating: 4
-//     },
-//     {
-//         name: "Test User",
-//         review: "Good quality products.",
-//         rating: 4
-//     },
-//     {
-//         name: "Test User",
-//         review: "Good quality products.",
-//         rating: 4
-//     },
-//     {
-//         name: "Test User",
-//         review: "Good quality products.",
-//         rating: 4
-//     },
-//     {
-//         name: "Test User",
-//         review: "Good quality products.",
-//         rating: 4
-//     },
-//     {
-//         name: "Test User",
-//         review: "Good quality products.",
-//         rating: 4
-//     }
-// ]
+
 
 const settings = {
     dots: true,
@@ -100,14 +51,14 @@ const settings = {
 
 
 const Testimonial = () => {
-    const [testimonials, setTestimonials] = useState([]);
-    const { isLoading } = useAuth();
+    const dispatch = useDispatch();
+    const { reviews, isLoading } = useSelector(state => state.reviews);
 
     useEffect(() => {
-        fetch('https://desolate-beyond-60013.herokuapp.com/reviews')
-            .then(res => res.json())
-            .then(data => setTestimonials(data));
-    }, []);
+        dispatch(getReviews());
+    }, [dispatch])
+
+
     if (isLoading) {
         return (
             <div className="d-flex justify-content-center my-5 loading">
@@ -129,7 +80,7 @@ const Testimonial = () => {
                     <Slider {...settings}>
 
                         {
-                            testimonials?.map((testimonial, t_id) => (<SingleTestimonial key={t_id} testimonial={testimonial} />))
+                            reviews?.map((testimonial, t_id) => (<SingleTestimonial key={t_id} testimonial={testimonial} />))
                         }
 
                     </Slider>
