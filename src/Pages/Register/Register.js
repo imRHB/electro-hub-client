@@ -1,4 +1,7 @@
 import React from 'react';
+import styles from './Register.module.css';
+import img1 from './img/img-login.svg';
+import { NavLink } from 'react-router-dom';
 
 const Register = () => {
     return (
