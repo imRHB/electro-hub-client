@@ -1,0 +1,31 @@
+.footer {
+  background-color: #063b52;
+  color: #e4dededc;
+}
+.social:hover {
+  color: #fabc38;
+  cursor: pointer;
+}
+.quickNav {
+  list-style: none;
+  transition: 0.3s;
+}
+.quickNav {
+  text-decoration: none;
+  padding-left: 0px;
+}
+.menuItem {
+  color: rgb(238, 235, 235);
+  text-decoration: none;
+  line-height: 2.5rem;
+}
+.menuItem:hover {
+  color: rgb(250, 188, 56);
+  font-weight: 700;
+}
+.footerLogo {
+  width: 220px;
+}
+.footerEnd {
+  background-color: #072c3b;
+}

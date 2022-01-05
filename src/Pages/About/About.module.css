@@ -1,0 +1,23 @@
+.aboutSection {
+  margin-top: 80px;
+}
+.aboutBanner {
+  background-image: url(https://i.ibb.co/Hp8cqrw/abstract-smoke-wallpaper-background-desktop-53876-128257.jpg);
+  width: 100%;
+  height: 250px;
+  font-weight: 900;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.directors {
+  background-color: rgba(165, 234, 236, 0.61);
+}
+.membersSection {
+  background-color: #f1eeeed8;
+}
+.title,
+.memberName {
+  color: rgb(22, 180, 219);
+}
