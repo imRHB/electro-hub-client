@@ -5,7 +5,7 @@ const ManageProduct = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        fetch('')
+        fetch('http://localhost:5000/products')
             .then(res => res.json())
             .then(data => setProducts(data));
     }, [products]);
@@ -14,7 +14,7 @@ const ManageProduct = () => {
         const deleteConfirmation = window.confirm('Do you want to delete product?');
 
         if (deleteConfirmation) {
-            const productUri = `/${productId}`;
+            const productUri = `http://localhost:5000/products/${productId}`;
 
             fetch(productUri, {
                 method: 'DELETE'

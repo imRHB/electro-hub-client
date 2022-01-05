@@ -5,7 +5,7 @@ const ManageOrder = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch('')
+        fetch('http://localhost:5000/orders')
             .then(res => res.json())
             .then(data => setOrders(data));
     }, [orders]);
@@ -14,7 +14,7 @@ const ManageOrder = () => {
         const deleteConfirmation = window.confirm('Do you want delete the order?');
 
         if (deleteConfirmation) {
-            const productUri = `/${orderId}`;
+            const productUri = `http://localhost:5000/orders/${orderId}`;
             fetch(productUri, {
                 method: 'DELETE'
             })

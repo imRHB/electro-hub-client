@@ -7,7 +7,7 @@ const MyOrder = () => {
     const { user } = useAuth();
 
     useEffect(() => {
-        const myOrderUri = `/${user.email}`;
+        const myOrderUri = `http://localhost:5000/orders/${user.email}`;
 
         fetch(myOrderUri)
             .then(res => res.json())
@@ -18,7 +18,7 @@ const MyOrder = () => {
         const cancelConfirmation = window.confirm('Do you want to cancel your order?');
 
         if (cancelConfirmation) {
-            const productUri = `/${productId}`;
+            const productUri = `http://localhost:5000/products/${productId}`;
             fetch(productUri, {
                 method: 'DELETE'
             })

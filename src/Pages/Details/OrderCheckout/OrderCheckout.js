@@ -15,13 +15,13 @@ const OrderCheckout = () => {
     const [orderedProduct, setOrderedProduct] = useState({});
 
     useEffect(() => {
-        fetch(`/${productId}`)
+        fetch(`http://localhost:5000/products/${productId}`)
             .then(res => res.json())
             .then(data => setOrderedProduct(data));
     }, [productId]);
 
     const onSubmit = data => {
-        fetch('', {
+        fetch('http://localhost:5000/orders/', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

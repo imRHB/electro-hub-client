@@ -10,7 +10,7 @@ const ProductDetails = () => {
     const { _id, title, img, description, price } = product;
 
     useEffect(() => {
-        fetch(`/${productId}`)
+        fetch(`http://localhost:5000/products/${productId}`)
             .then(res => res.json())
             .then(data => setProduct(data));
     }, [productId]);
