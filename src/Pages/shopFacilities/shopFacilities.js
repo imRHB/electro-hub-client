@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import styles from './shopFacilities.module.css';
+import styles from './ShopFacilities.module.css';
 
 const facilities = [
     {
@@ -29,9 +29,9 @@ const facilities = [
     },
 ]
 
-const shopFacilities = () => {
+const ShopFacilities = () => {
     return (
-        <div className={`${styles.statusSection}`}>
+        <div className={`my-3 ${styles.statusSection}`}>
             <Container>
                 <div className="text-center mx-auto">
                     <h5 className={`${styles.shortInfo}`}>Why Two Wheels Zone</h5>
@@ -58,4 +58,4 @@ const shopFacilities = () => {
     );
 };
 
-export default shopFacilities;
+export default ShopFacilities;
