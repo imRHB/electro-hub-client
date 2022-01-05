@@ -1,6 +1,8 @@
 
 
-*{
+
+
+/* *{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -9,7 +11,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
-}
+} */
 
 .wave{
 	position: fixed;
@@ -34,7 +36,7 @@ body{
 	align-items: center;
 }
 
-.login-content{
+.loginContent{
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -49,18 +51,18 @@ form{
 	width: 360px;
 }
 
-.login-content img{
+.loginContent img{
     height: 100px;
 }
 
-.login-content h2{
+.loginContent h2{
 	margin: 15px 0;
 	color: #333;
 	text-transform: uppercase;
 	font-size: 2.9rem;
 }
 
-.login-content .login-input-div{
+.loginContent .inputDiv{
 	position: relative;
     display: grid;
     grid-template-columns: 7% 93%;
@@ -69,27 +71,27 @@ form{
     border-bottom: 2px solid #d9d9d9;
 }
 
-.login-content .login-input-div.one{
+.loginContent .inputDiv.one{
 	margin-top: 0;
 }
 
-.login-i{
+.i{
 	color: #d9d9d9;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.login-i i{
+.i i{
 	transition: .3s;
 }
 
-.login-input-div > div{
+.inputDiv > div{
     position: relative;
 	height: 45px;
 }
 
-.login-input-div > div > h5{
+.inputDiv > div > h5{
 	position: absolute;
 	left: 10px;
 	top: 50%;
@@ -99,7 +101,7 @@ form{
 	transition: .3s;
 }
 
-.login-input-div:before, .login-input-div:after{
+.inputDiv:before, .inputDiv:after{
 	content: '';
 	position: absolute;
 	bottom: -2px;
@@ -109,28 +111,28 @@ form{
 	transition: .4s;
 }
 
-.login-input-div:before{
+.inputDiv:before{
 	right: 50%;
 }
 
-.login-input-div:after{
+.inputDiv:after{
 	left: 50%;
 }
 
-.login-input-div.focus:before, .login-input-div.focus:after{
+.inputDiv.focus:before, .inputDiv.focus:after{
 	width: 50%;
 }
 
-.login-input-div.focus > div > h5{
+.inputDiv.focus > div > h5{
 	top: -5px;
 	font-size: 15px;
 }
 
-.login-input-div.focus > .login-i > i{
+.inputDiv.focus > .i > i{
 	color: #38d39f;
 }
 
-.login-input-div > div > input{
+.inputDiv > div > input{
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -145,7 +147,7 @@ form{
 	font-family: 'poppins', sans-serif;
 }
 
-.login-input-div.pass{
+.inputDiv.pass{
 	margin-bottom: 4px;
 }
 
@@ -195,7 +197,7 @@ a:hover{
 		width: 290px;
 	}
 
-	.login-content h2{
+	.loginContent h2{
         font-size: 2.4rem;
         margin: 8px 0;
 	}
@@ -218,7 +220,7 @@ a:hover{
 		display: none;
 	}
 
-	.login-content{
+	.loginContent{
 		justify-content: center;
 	}
 }
