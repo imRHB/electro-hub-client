@@ -8,7 +8,7 @@ const Landing = () => {
     return (
         <div>
             <Header />
-            <TopSlider />
+            {/* <TopSlider /> */}
             <Testimonial />
             <Footer />
         </div>

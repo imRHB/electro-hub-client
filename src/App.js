@@ -17,6 +17,7 @@ import NotFound from './Pages/NotFound/NotFound';
 import ProductDetails from "./Pages/Details/ProductDetails/ProductDetails";
 import OrderCheckout from "./Pages/Details/OrderCheckout/OrderCheckout";
 import ManageProduct from "./Pages/Dashboard/ManageProduct/ManageProduct";
+import Home from "./Pages/Home/Home/Home";
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
             {/* <Route path="/cart" element={<Cart />} /> */}
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+
+            {/* test route */}
+            <Route path="/nasim" element={<Home />} />;
 
             {/* Dashboard */}
             {/* <Route path="/dashboard" element={<Dashboard />}>
