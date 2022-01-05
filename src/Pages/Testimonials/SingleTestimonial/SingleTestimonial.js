@@ -31,7 +31,9 @@ const SingleTestimonial = ({ testimonial }) => {
                 </Col>
             </Row>
             <div>
-                <small>{testimonial?.comment}</small>
+                <div className={`py-1 ${styles.commentSection}`}>
+                    <small>{testimonial?.comment}</small>
+                </div>
                 <div className="py-3 mx-auto">
                     <Rating
                         className={`${styles.ratings}`}

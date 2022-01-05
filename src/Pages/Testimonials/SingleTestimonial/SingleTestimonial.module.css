@@ -7,3 +7,7 @@
 .ratings span {
   margin-left: 0 !important;
 }
+
+.commentSection {
+  height: 200px;
+}
