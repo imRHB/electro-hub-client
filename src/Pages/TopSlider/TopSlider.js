@@ -5,7 +5,7 @@ import styles from './TopSlider.module.css';
 
 const TopSlider = () => {
     return (
-        <div className='mt-3 pt-2'>
+        <div className=''>
             <Carousel className={`${styles.slider}`}>
                 <Carousel.Item className={`${styles.sliderItem}`}>
                     <img
