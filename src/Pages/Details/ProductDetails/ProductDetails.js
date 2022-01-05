@@ -20,7 +20,7 @@ const ProductDetails = () => {
     return (
         <div>
             <Header />
-            <Container className="my-5 py-5">
+            <Container className="my-5">
                 {/* <h2 className="text-center fs-1 fw-bold text-secondary my-5">Product Details</h2> */}
 
                 <Row xs={1} md={1} xl={2} className="g-5">
@@ -34,7 +34,13 @@ const ProductDetails = () => {
                         <h1 className="fs-2 fw-bold text-info text-uppercase">{title}</h1>
 
                         <div className="bg-light rounded-3 p-4 my-4">
-                            <p>{specifications}</p>
+                            <h4>Key Specifications</h4>
+
+                            {
+                                specifications.split(', ').map((spec, index) => <>
+                                    <li>{spec}</li>
+                                </>)
+                            }
                         </div>
 
                         <div className="bg-light rounded-3 p-4 my-4">
@@ -43,7 +49,7 @@ const ProductDetails = () => {
                         </div>
 
                         <div className="bg-light p-4 rounded-3">
-                            <h2>${price}</h2>
+                            <h2 className="fw-bold">${price}</h2>
                             <Link to={`/place-order/${_id}`}>
                                 <Button
                                     variant="success"
