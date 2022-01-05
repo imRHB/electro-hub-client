@@ -68,7 +68,6 @@
   }
   
   .loginRegister{
-	position: absolute;
 	bottom: 1rem;
 	width: 100%;
 	background-color: var(--first-color-lighten);
