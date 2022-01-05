@@ -125,6 +125,7 @@ img{
 
 .loginForgot{
   display: block;
+  margin: 10px;
   width: max-content;
   margin-left: auto;
   margin-top: .5rem;
