@@ -35,7 +35,7 @@ const Register = () => {
                         </div>
 
                         <NavLink to="/login" className={`${styles.loginForget}`}>Already Register?Please LogIn</NavLink>
-                        <Link to="#" className={`${styles.loginButton}`}>Sign In</Link>
+                        <Link to="#" className={`${styles.loginButton}`}>Register</Link>
 
 
                     </form>

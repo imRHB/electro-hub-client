@@ -51,17 +51,26 @@ const Login = () => {
                                     <i className="fas fa-user"></i>
                                 </div>
                                 <div className="div">
-
-                                    <input type="email" className="input" name="email" placeholder="email" onChange={handleOnChange} />
+                                    <h5>Email</h5>
+                                    <input type="email" className="input" name="email" onChange={handleOnChange} />
                                 </div>
                             </div>
-                            <div className="input-div pass">
+                            {/* <div className="input-div pass">
                                 <div className="i">
                                     <i className="fas fa-lock"></i>
                                 </div>
                                 <div className="div">
 
                                     <input type="password" className="input" name="password" placeholder="password" onChange={handleOnChange} />
+                                </div>
+                            </div> */}
+                            <div className="input-div pass">
+                                <div className="i">
+                                    <i className="fas fa-lock"></i>
+                                </div>
+                                <div className="div">
+                                    <h5>Password</h5>
+                                    <input type="password" className="input" name="password" onChange={handleOnChange} />
                                 </div>
                             </div>
                             <NavLink className="forget" to="/register">New User?Please Register</NavLink>
@@ -70,12 +79,13 @@ const Login = () => {
 
                         </form>
                         <input onClick={handleGoogleSignIn} type="submit" className="submit-btn" value="Google Sign In" />
-                        {user?.email && <div class="alert alert-primary" role="alert">
+
+                        {/* {user?.email && <div class="alert alert-primary" role="alert">
                             LogIn Successfully
                         </div>}
                         {authError && <div class="alert alert-danger" role="alert">
                             {authError}
-                        </div>}
+                        </div>} */}
                     </div>
                 </div>
             </div>
