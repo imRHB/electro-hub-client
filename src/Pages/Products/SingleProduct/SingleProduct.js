@@ -19,7 +19,7 @@ const SingleProduct = (props) => {
                     <Card.Text>
                         <div className="d-flex justify-content-between fs-3 fw-bold">
                             <p className="text-info">${price}</p>
-                            <Link to={`/rose-bouquet/${_id}`}>
+                            <Link to={`/products/${_id}`}>
                                 <Button
                                     variant="secondary">Details</Button>
                             </Link>
