@@ -1,5 +1,5 @@
 import { faCommentAlt } from '@fortawesome/free-regular-svg-icons';
-import { faHome, faMoneyCheckAlt, faPlus, faSignOutAlt, faTh, faThLarge, faThList, faUserPlus } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faPlus, faSignOutAlt, faTh, faThLarge, faThList, faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from 'react';
 import { Col, Container, Nav, Row, Tab } from "react-bootstrap";
