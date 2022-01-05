@@ -17,7 +17,7 @@ const OrderCheckout = () => {
     const [orderedProduct, setOrderedProduct] = useState({});
 
     useEffect(() => {
-        fetch(`https://desolate-beyond-60013.herokuapp.com/products/${productId}`)
+        fetch(`https://desolate-beyond-60013.herokuapp.com/product/${productId}`)
             .then(res => res.json())
             .then(data => setOrderedProduct(data));
     }, [productId]);

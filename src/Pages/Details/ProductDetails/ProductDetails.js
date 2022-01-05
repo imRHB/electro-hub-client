@@ -12,7 +12,7 @@ const ProductDetails = () => {
     const { _id, title, img, specifications, description, price } = product;
 
     useEffect(() => {
-        fetch(`https://desolate-beyond-60013.herokuapp.com/products/${productId}`)
+        fetch(`https://desolate-beyond-60013.herokuapp.com/product/${productId}`)
             .then(res => res.json())
             .then(data => setProduct(data));
     }, [productId]);
@@ -35,12 +35,7 @@ const ProductDetails = () => {
 
                         <div className="bg-light rounded-3 p-4 my-4">
                             <h4>Key Specifications</h4>
-
-                            {
-                                specifications.split(', ').map((spec, index) => <>
-                                    <li>{spec}</li>
-                                </>)
-                            }
+                            <p>{specifications}</p>
                         </div>
 
                         <div className="bg-light rounded-3 p-4 my-4">

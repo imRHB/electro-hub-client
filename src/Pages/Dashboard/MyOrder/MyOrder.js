@@ -18,7 +18,7 @@ const MyOrder = () => {
         const cancelConfirmation = window.confirm('Do you want to cancel your order?');
 
         if (cancelConfirmation) {
-            const productUri = `https://desolate-beyond-60013.herokuapp.com/products/${productId}`;
+            const productUri = `https://desolate-beyond-60013.herokuapp.com/product/${productId}`;
             fetch(productUri, {
                 method: 'DELETE'
             })

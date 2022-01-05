@@ -14,7 +14,7 @@ const ManageProduct = () => {
         const deleteConfirmation = window.confirm('Do you want to delete product?');
 
         if (deleteConfirmation) {
-            const productUri = `https://desolate-beyond-60013.herokuapp.com/products/${productId}`;
+            const productUri = `https://desolate-beyond-60013.herokuapp.com/product/${productId}`;
 
             fetch(productUri, {
                 method: 'DELETE'
