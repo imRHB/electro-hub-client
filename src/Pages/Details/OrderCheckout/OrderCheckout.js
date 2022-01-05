@@ -73,6 +73,7 @@ const OrderCheckout = () => {
 
                         <div className="my-3 px-2 py-4 rounded-3 border">
                             <p className="text-center fs-4 fw-bold text-warning">Product Disclaimer <span></span></p>
+                            <hr />
                             <ul className="text-muted">
                                 <li>The actual product may vary from the images shown on the website</li>
                                 <li>The actual colours may be vary from those shown depending on the device you are using to view the product or the angle of the item is photographed</li>
