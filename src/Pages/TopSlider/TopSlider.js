@@ -6,7 +6,7 @@ import styles from './TopSlider.module.css';
 const TopSlider = () => {
     return (
         <div>
-            <Carousel className={`${styles.carouselSection}`}>
+            {/* <Carousel className={`${styles.carouselSection}`}>
                 <Carousel.Item>
                     <div className={`${styles.singleCarouselItem}`}>
                         <img
@@ -72,7 +72,7 @@ const TopSlider = () => {
                     </div>
 
                 </Carousel.Item>
-            </Carousel>
+            </Carousel> */}
         </div>
     );
 };
