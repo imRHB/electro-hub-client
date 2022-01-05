@@ -1,49 +1,102 @@
-import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
-import img1 from './img/img-login.svg';
+import React, { useState } from 'react';
 import styles from './Register.module.css';
-
-
+import img1 from './img/img-login.svg';
+import { NavLink, useNavigate } from 'react-router-dom';
+import useAuth from '../../Hook/useAuth';
 const Register = () => {
+    const [loginData, setLoginData] = useState({});
+    const history = useNavigate();
+    const { user, registerUser, isLoading, authError } = useAuth();
+
+    const handleOnBlur = e => {
+        const field = e.target.name;
+        const value = e.target.value;
+        const newLoginData = { ...loginData };
+        newLoginData[field] = value;
+        setLoginData(newLoginData);
+    }
+
+    const handleLoginSubmit = e => {
+        if (loginData.password !== loginData.password2) {
+            alert('Your password did not match');
+            return
+        }
+        registerUser(loginData.email, loginData.password, loginData.name, history);
+        e.preventDefault();
+    }
     return (
-        <div className={`${styles.login}`}>
-            <div className={`${styles.loginContent}`}>
-                <div className={`${styles.loginImg}`}>
-                    <img src={img1} alt="" />
-                </div>
+        <>
+            <div className={`${styles.login}`}>
+                <div className={`${styles.loginContent}`}>
+                    <div className={`${styles.loginImg}`}>
+                        <img src={img1} alt="" />
+                    </div>
 
-                <div className={`${styles.loginForms}`}>
+                    <div className={`${styles.loginForms}`}>
 
-                    <form action="" className={`${styles.loginRegister}`} id="login-in">
-                        <h1 className={`${styles.loginTitle}`}>Create Account</h1>
+                        <form onSubmit={handleLoginSubmit} className={`${styles.loginRegister}`} id="login-in">
+                            <h1 className={`${styles.loginTitle}`}>Please Register</h1>
 
-                        <div className={`${styles.loginBox}`}>
-                            <i className='bx bx-user login__icon'></i>
-                            <input type="text" placeholder="Username" className={`${styles.loginInput}`} />
-                        </div>
+                            {/* 
+                              {user?.email &&
+                    [
 
-                        <div className={`${styles.loginBox}`}>
-                            {/* <i className='bx bx-at login__icon'></i> */}
-                            <i className={`${'bx bx-at'} ${styles.loginIcon}`}></i>
-                            <input type="text" placeholder="Email" className={`${styles.loginInput}`} />
-                        </div>
+                        'success',
 
-                        <div className={`${styles.loginBox}`}>
-                            {/* <i className='bx bx-lock-alt login__icon'></i> */}
-                            <i className={`${'bx bx-lock-alt'} ${styles.loginIcon}`}></i>
-                            <input type="password" placeholder="Password" className={`${styles.loginInput}`} />
-                        </div>
+                    ].map((variant, idx) => (
+                        <Alert key={idx} variant={variant}>
+                            User created {variant}successfully!
+                        </Alert>
+                    ))
+                }
 
-                        <NavLink to="/login" className={`${styles.loginForget}`}>Already Register?Please LogIn</NavLink>
-                        <Link to="#" className={`${styles.loginButton}`}>Sign In</Link>
+                {authError &&
+                    [
+
+                        'danger',
+
+                    ].map((variant, idx) => (
+                        <Alert key={idx} variant={variant}>
+                            {authError}
+                        </Alert>
+                    ))
+                }
+
+                {!isLoading && <form onSubmit={handleLoginSubmit}>
+                             */}
 
 
-                    </form>
+
+                            <div className={`${styles.loginBox}`}>
+
+                                <input type="text" placeholder="Name" onChange={handleOnBlur} className={`${styles.loginInput}`} />
+                            </div>
+                            <div className={`${styles.loginBox}`}>
+
+                                <input type="text" placeholder="Email" onChange={handleOnBlur} className={`${styles.loginInput}`} />
+                            </div>
+
+                            <div className={`${styles.loginBox}`}>
+
+                                <input type="password" placeholder="Password" onChange={handleOnBlur} className={`${styles.loginInput}`} />
+                            </div>
+                            <div className={`${styles.loginBox}`}>
+
+                                <input type="password" placeholder="Re-type your Password" onChange={handleOnBlur} className={`${styles.loginInput}`} />
+                            </div>
+
+                            <NavLink to="/login" className={`${styles.loginForgot}`}>Already have an Account?Please Login</NavLink>
+
+                            <button type="button" className={`${'btn btn-primary'}`}>Register</button>
 
 
+                        </form>
+
+
+                    </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 

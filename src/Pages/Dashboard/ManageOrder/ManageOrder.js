@@ -5,7 +5,7 @@ const ManageOrder = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch('')
+        fetch('https://desolate-beyond-60013.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setOrders(data));
     }, [orders]);
@@ -14,7 +14,7 @@ const ManageOrder = () => {
         const deleteConfirmation = window.confirm('Do you want delete the order?');
 
         if (deleteConfirmation) {
-            const productUri = `/${orderId}`;
+            const productUri = `https://desolate-beyond-60013.herokuapp.com/orders/${orderId}`;
             fetch(productUri, {
                 method: 'DELETE'
             })

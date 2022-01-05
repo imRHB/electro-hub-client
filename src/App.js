@@ -16,6 +16,8 @@ import AddReview from "./Pages/Dashboard/AddReview/AddReview";
 import NotFound from './Pages/NotFound/NotFound';
 import ProductDetails from "./Pages/Details/ProductDetails/ProductDetails";
 import OrderCheckout from "./Pages/Details/OrderCheckout/OrderCheckout";
+import ManageProduct from "./Pages/Dashboard/ManageProduct/ManageProduct";
+import Home from "./Pages/Home/Home/Home";
 
 function App() {
   return (
@@ -26,12 +28,17 @@ function App() {
             <Route path="/" element={<Landing />} />
             <Route path="/home" element={<Landing />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/products/:productId" element={<ProductDetails />} />
 
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             {/* <Route path="/cart" element={<Cart />} /> */}
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/place-order/:productId" element={<OrderCheckout />} />
+
+            {/* test route */}
+            <Route path="/nasim" element={<Home />} />;
 
             {/* Dashboard */}
             {/* <Route path="/dashboard" element={<Dashboard />}>
@@ -51,7 +58,11 @@ function App() {
             <Route path="/dashboard" element={<Dashboard />}>
               <Route path="product-details" element={<ProductDetails />} />
               <Route path="manage-order" element={<ManageOrder />} />
+              <Route path="manage-product" element={<ManageProduct />} />
               <Route path="my-order" element={<MyOrder />} />
+              <Route path="make-admin" element={<MakeAdmin />} />
+              <Route path="add-product" element={<AddProduct />} />
+              <Route path="add-review" element={<AddReview />} />
 
             </Route>
             <Route path="place-order" element={<OrderCheckout />} />
