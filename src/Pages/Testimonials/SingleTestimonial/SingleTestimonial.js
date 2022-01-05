@@ -14,9 +14,17 @@ const SingleTestimonial = ({ testimonial }) => {
         <Card className={`shadow-sm mx-2 my-5 text-center px-3 py-4 rounded-3 ${styles.testimonialCard}`}>
             <Row xs={1} md={1} lg={1} className='pb-3 d-flex justify-content-center align-items-center'>
                 <Col xs={12} md={4} lg={4}>
-                    <div>
-                        <img className='mx-auto img-fluid w-75 border border-3 rounded-circle border-secondary' src={user?.email ? user?.photoURL : userIcon} alt="" />
-                    </div>
+                    {
+                        user?.photoURL ? (
+                            <div>
+                                <img className='mx-auto img-fluid w-75 border border-3 rounded-circle border-secondary' src={user?.photoURL} alt="" />
+                            </div>
+                        ) : (
+                            <div>
+                                {userIcon}
+                            </div>
+                        )
+                    }
                 </Col>
                 <Col xs={12} md={8} lg={8}>
                     <h5 className={`fw-bold mx-auto ${styles.customerName}`}>{testimonial?.name}</h5>
