@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import useAuth from "../../../Hook/useAuth";
 import styles from './AddReview.module.css';
 
 const AddReview = () => {
+    const [rating, setRating] = useState('');
+
     const { user } = useAuth();
     const { register, handleSubmit, reset } = useForm();
+
+    const handleRating = rating => {
+        setRating(rating);
+    };
 
     const onSubmit = data => {
         fetch('http://localhost:5000/add-review', {
@@ -32,7 +38,7 @@ const AddReview = () => {
                     <h3 className="fw-bold">Give Us Review</h3>
                 </div>
 
-                <div>
+                <div className="w-100">
                     <Container>
                         <form onSubmit={handleSubmit(onSubmit)} className={`${'pb-4'} ${styles.reviewForm}`}>
                             <input {...register("name", { required: true })} defaultValue={user.displayName} readOnly />
