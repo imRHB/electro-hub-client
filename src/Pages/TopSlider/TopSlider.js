@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel, Button } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 import Typical from 'react-typical';
 import styles from './TopSlider.module.css';
 
@@ -23,7 +24,9 @@ const TopSlider = () => {
 
                         </h1>
                         <p className="fs-4 ">Prebook is gooing on</p>
-                        <Button className={`text-white border border-2 px-4 py-2 ${styles.sliderBtn}`} variant="outside-light">Prebook Now <i className="fas fa-angle-double-right"></i></Button>
+                        <Link to="/shop">
+                            <Button className={`text-white border border-2 px-4 py-2 ${styles.sliderBtn}`} variant="outside-light">Prebook Now <i className="fas fa-angle-double-right"></i></Button>
+                        </Link>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className={`${styles.sliderItem}`}>
@@ -42,7 +45,9 @@ const TopSlider = () => {
                             />
                         </h1>
                         <p className="fs-4">Upto 15% discount is ongoing</p>
-                        <Button className={`text-white border border-2 px-4 py-2 ${styles.sliderBtn}`} variant="outside-light">Order Now <i className="fas fa-angle-double-right"></i></Button>
+                        <Link to="/shop">
+                            <Button className={`text-white border border-2 px-4 py-2 ${styles.sliderBtn}`} variant="outside-light">Order Now <i className="fas fa-angle-double-right"></i></Button>
+                        </Link>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item className={`${styles.sliderItem}`}>
@@ -61,7 +66,9 @@ const TopSlider = () => {
                             />
                         </h1>
                         <p className="fs-4">We have best and unique bikes.</p>
-                        <Button className={`text-white border border-2 px-4 py-2 ${styles.sliderBtn}`} variant="outside-light">Order Now <i className="fas fa-angle-double-right"></i></Button>
+                        <Link to="/shop">
+                            <Button className={`text-white border border-2 px-4 py-2 ${styles.sliderBtn}`} variant="outside-light">Order Now <i className="fas fa-angle-double-right"></i></Button>
+                        </Link>
                     </Carousel.Caption>
                 </Carousel.Item>
 

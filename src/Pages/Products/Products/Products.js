@@ -21,8 +21,7 @@ const Products = () => {
     }, []);
 
     return (
-        <div>
-            <Header />
+        <div className="my-5 py-5">
             {
                 loading ? <div className={`${styles.spinnerContainer}`}><Spinner animation="grow" variant="primary" /></div>
                     :
@@ -38,7 +37,6 @@ const Products = () => {
                         </Row>
                     </Container>
             }
-            <Footer />
         </div>
     );
 };

@@ -1,6 +1,6 @@
 import React from 'react';
 import Facilities from "../Facilities/Facilities";
-import Products from "../Products/Products/Products";
+import FeaturedProducts from "../Products/FeaturedProducts/FeaturedProducts";
 import Footer from "../Shared/Footer/Footer";
 import Header from "../Shared/Header/Header";
 import Testimonial from "../Testimonials/Testimonial/Testimonial";
@@ -11,9 +11,9 @@ const Landing = () => {
         <div>
             <Header />
             <TopSlider />
-            <Products />
-            <Testimonial />
+            <FeaturedProducts />
             <Facilities />
+            <Testimonial />
             <Footer />
         </div>
     );
