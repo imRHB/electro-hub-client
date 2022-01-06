@@ -18,7 +18,7 @@ const ProductBrand = () => {
                 <div class="type-car-card cartype">
                     <div class="car-cardbody">
                         <div class="car-cardbody-img">
-                            <img src="" alt="" />
+                            <img src="https://i.ibb.co/8d3V0kd/asset-23.jpg" alt="" />
                         </div>
                         <div class="item-name">
                             <p>Laptop</p>
@@ -26,7 +26,7 @@ const ProductBrand = () => {
                     </div>
                     <div class="car-cardbody">
                         <div class="car-cardbody-img">
-                            <img src="" alt="" />
+                            <img src="https://i.ibb.co/BGcRkLv/asset-12.jpg" alt="" />
                         </div>
                         <div class="item-name">
                             <p>Phone</p>
@@ -34,10 +34,26 @@ const ProductBrand = () => {
                     </div>
                     <div class="car-cardbody">
                         <div class="car-cardbody-img">
-                            <img src="" alt="" />
+                            <img src="https://i.ibb.co/Mc80rX2/asset-6.jpg" alt="" />
                         </div>
                         <div class="item-name">
-                            <p>SUVS Cars</p>
+                            <p>Headphone</p>
+                        </div>
+                    </div>
+                    <div class="car-cardbody">
+                        <div class="car-cardbody-img">
+                            <img src="https://i.ibb.co/wCVQjDP/s2.jpg" alt="" />
+                        </div>
+                        <div class="item-name">
+                            <p>Speaker</p>
+                        </div>
+                    </div>
+                    <div class="car-cardbody">
+                        <div class="car-cardbody-img">
+                            <img src="https://i.ibb.co/92BxnjX/asset-3.jpg" alt="" />
+                        </div>
+                        <div class="item-name">
+                            <p>Gaming</p>
                         </div>
                     </div>
                     <div class="car-cardbody">
@@ -45,23 +61,7 @@ const ProductBrand = () => {
                             <img src="" alt="" />
                         </div>
                         <div class="item-name">
-                            <p>Pickup Cars</p>
-                        </div>
-                    </div>
-                    <div class="car-cardbody">
-                        <div class="car-cardbody-img">
-                            <img src="" alt="" />
-                        </div>
-                        <div class="item-name">
-                            <p>Vans Cars</p>
-                        </div>
-                    </div>
-                    <div class="car-cardbody">
-                        <div class="car-cardbody-img">
-                            <img src="" alt="" />
-                        </div>
-                        <div class="item-name">
-                            <p>Sedans Cars</p>
+                            <p>Drone</p>
                         </div>
                     </div>
                 </div>

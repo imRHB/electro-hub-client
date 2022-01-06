@@ -74,10 +74,10 @@ const Registerd = () => {
                                                 Submit
                                             </Button>
                                             <Link to="/login"><Button variant="text">
-                                                Already Registerd
+                                                Already Registerd? Login Here
                                             </Button></Link>
                                         </Form>
-                                        <p>================</p>
+                                        <hr />
                                         <Button onClick={handleGoogleSignIn} variant="primary" >
                                             Google Sign In
                                         </Button>
@@ -90,7 +90,6 @@ const Registerd = () => {
                                 {authError && <Alert variant="danger">
                                     {authError}
                                 </Alert>}
-
                             </div>
                             <div className="col-md-6 registration-right">
                             </div>

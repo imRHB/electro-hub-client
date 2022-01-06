@@ -59,9 +59,10 @@ const Login = () => {
                                     Login
                                 </Button>
                                 <Link to="/register"><Button variant="text">
-                                    New User
+                                    New User? Register Here
                                 </Button></Link>
-                                <p>================</p>
+                                <hr />
+
                                 {isLoading && <Spinner animation="border" variant="danger" />}
                                 {user?.email && <Alert variant="success">
                                     User Created Successfully
@@ -73,9 +74,6 @@ const Login = () => {
                             <Button onClick={handleGoogleSignIn} variant="primary" >
                                 Google Sign In
                             </Button>
-
-
-
                         </div>
                         <div className="col-md-6 login-right">
                         </div>

@@ -63,7 +63,7 @@ const OrderCheckout = () => {
 
                                     <div className="mx-3">
                                         <div className="">
-                                            <img src={orderedProduct.img} alt="" className="mx-auto w-50 border rounded-3" />
+                                            <img src={orderedProduct.img} alt="" className={`${'mx-auto w-50 border rounded-3'} ${styles.imgSide}`} />
                                         </div>
                                         <Row xs={2} sm={2} md={2} lg={2} className="my-4">
                                             <Col className="col-3 col-sm-3 col-md-3 col-lg-3">
