@@ -1,0 +1,17 @@
+.spinnerContainer {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.orderCheckout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.orderCheckout input, textarea {
+    width: 360px;
+    margin: 8px;
+    padding: 4px;
+}

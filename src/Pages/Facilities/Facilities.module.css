@@ -1,0 +1,14 @@
+.statusSection {
+  /* background-color: #ebe8e8b7; */
+}
+.shortInfo {
+  color: #0cc3db;
+}
+.status {
+  background-color: #08a6bbc0;
+  transition: 0.3s;
+}
+.status:hover {
+  opacity: 0.8;
+  background-color: rgb(8, 216, 206);
+}
