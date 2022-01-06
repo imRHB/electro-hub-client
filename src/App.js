@@ -7,8 +7,6 @@ import Landing from "./Pages/Landing/Landing";
 import Products from './Pages/Products/Products/Products';
 import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
-// import Login from "./Pages/Login/Login";
-// import Register from './Pages/Register/Register';
 import ManageOrder from "./Pages/Dashboard/ManageOrder/ManageOrder";
 import MakeAdmin from "./Pages/Dashboard/MakeAdmin/MakeAdmin";
 import MyOrder from "./Pages/Dashboard/MyOrder/MyOrder";
@@ -19,8 +17,10 @@ import ProductDetails from "./Pages/Details/ProductDetails/ProductDetails";
 import OrderCheckout from "./Pages/Details/OrderCheckout/OrderCheckout";
 import ManageProduct from "./Pages/Dashboard/ManageProduct/ManageProduct";
 import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
-import Login from "./Pages/User/Login/Login";
-import Register from './Pages/User/Register/Register';
+import Login from "./Pages/loginAndRegisterd/Login/Login";
+import Registerd from "./Pages/loginAndRegisterd/Registerd/Registerd";
+// import Login from "./Pages/User/Login/Login";
+// import Register from './Pages/User/Register/Register';
 
 function App() {
   return (
@@ -38,7 +38,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             {/* <Route path="/cart" element={<Cart />} /> */}
             <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
+            <Route path="/register" element={<Registerd />} />
             <Route path="/place-order/:productId" element={<OrderCheckout />} />
 
             {/* Dashboard */}
