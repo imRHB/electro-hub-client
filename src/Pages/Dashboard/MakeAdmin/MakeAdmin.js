@@ -1,15 +1,44 @@
 import React, { useState } from 'react';
 import { Button, Container, Form } from "react-bootstrap";
+import { toast } from "react-toastify";
 
 const MakeAdmin = () => {
     const [email, setEmail] = useState({});
-    const [success, setSuccess] = useState(false);
+    // const [success, setSuccess] = useState(false);
 
     const handleOnBlur = e => {
         setEmail(e.target.value);
     };
 
-    const handleMakeAdmin = e => {
+    const handleMakeAdmin = (e) => {
+        const user = { email };
+        e.preventDefault();
+        fetch('https://desolate-beyond-60013.herokuapp.com/users/admin', {
+            method: 'PUT',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify(user)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+                if (data.modifiedCount > 0) {
+                    toast.success(`Admin added successfully`, {
+                        position: "bottom-left",
+                        autoClose: 2000,
+                    });
+                }
+                else {
+
+                }
+                e.target.reset();
+            });
+    };
+
+
+
+    /* const handleMakeAdmin = e => {
         e.preventDefault();
 
         const user = { email };
@@ -35,7 +64,7 @@ const MakeAdmin = () => {
                     }
                 })
         }
-    };
+    }; */
 
     return (
         <div>

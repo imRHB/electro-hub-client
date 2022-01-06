@@ -49,13 +49,12 @@ function App() {
             <Route path="/dashboard" element={<PrivateRoute>
               <Dashboard />
             </PrivateRoute>}>
-              <Route path="product-details" element={<ProductDetails />} />
+              <Route path="my-order" element={<MyOrder />} />
+              <Route path="add-review" element={<AddReview />} />
               <Route path="manage-order" element={<ManageOrder />} />
               <Route path="manage-product" element={<ManageProduct />} />
-              <Route path="my-order" element={<MyOrder />} />
               <Route path="make-admin" element={<MakeAdmin />} />
               <Route path="add-product" element={<AddProduct />} />
-              <Route path="add-review" element={<AddReview />} />
             </Route>
 
             <Route path="*" element={<NotFound />} />

@@ -17,7 +17,8 @@ const serviceIcon = <FontAwesomeIcon icon={faThLarge} />;
 const logoutIcon = <FontAwesomeIcon icon={faSignOutAlt} />;
 
 const Dashboard = () => {
-    const { logOut } = useAuth();
+    const { logOut, admin } = useAuth();
+    console.log(admin);
 
     return (
         <div>

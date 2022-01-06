@@ -116,11 +116,21 @@ const useFirebase = () => {
         })
             .then()
     }
-    useEffect(() => {
+    /* useEffect(() => {
         fetch(`https://desolate-beyond-60013.herokuapp.com/users/${user.email}`)
             .then(res => res.json())
-            .then(data => setAdmin(data.admin))
-    }, [user.email]);
+            .then(data => {
+                setAdmin(data.admin);
+                console.log(data.admin);
+            })
+    }, [user.email]); */
+
+    useEffect(() => {
+        fetch(`https://desolate-beyond-60013.herokuapp.com/users/${user?.email}`)
+            .then(res => res.json())
+            .then(data => setAdmin(data.admin));
+    }, [user?.email]);
+
 
     return {
         isLoading,
