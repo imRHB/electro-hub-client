@@ -1,7 +1,11 @@
+import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from 'react';
 import { Button, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import SingleProduct from "../SingleProduct/SingleProduct";
+
+const dbArrowIcon = <FontAwesomeIcon icon={faAngleDoubleRight} />;
 
 const FeaturedProducts = () => {
     const [products, setProducts] = useState([]);
@@ -29,7 +33,7 @@ const FeaturedProducts = () => {
 
                 <div className="my-5 text-center">
                     <Link to="/shop">
-                        <Button>EXPLORE MORE</Button>
+                        <Button>EXPLORE MORE <span className="ms-3">{dbArrowIcon}</span></Button>
                     </Link>
                 </div>
             </Container>

@@ -30,7 +30,7 @@ const Facilities = () => {
         <div className={`my-3 ${styles.statusSection}`}>
             <Container>
                 <div className="text-center mx-auto">
-                    <h5 className={`${styles.shortInfo}`}>Why Two ElectroHub</h5>
+                    <h5 className={`${styles.shortInfo}`}>Why ElectroHub</h5>
                     <h2 className="text-secondary fw-bold">Why You Choose Us For Buying Electronic Products</h2>
                 </div>
                 <div className="py-5 px-auto mx-auto">

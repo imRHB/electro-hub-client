@@ -10,7 +10,7 @@ const Login = () => {
     const location = useLocation();
     const history = useNavigate();
 
-    const { user, loginUser, signInWithGogle, isLoading, authError } = useAuth();
+    const { user, loginUser, signInWithGoogle, isLoading, authError } = useAuth();
     const handleOnChange = e => {
         const field = e.target.name;
         const value = e.target.value;
@@ -27,7 +27,7 @@ const Login = () => {
 
     // const handleGoogleSignIn = () => {
     //     alert('google sign in');
-    //     signInWithGogle(location, history);
+    //     signInWithGoogle(location, history);
     // }
     return (
         <div className={`${styles.login}`}>
@@ -66,7 +66,7 @@ const Login = () => {
 
                     </form>
                     {/* <button onClick={handleGoogleSignIn} type="button" className={`${'btn btn-primary mt-2'}`}>Google SignIn</button> */}
-                    <input onClick={signInWithGogle} type="submit" className={`${'btn btn-primary mt-2'}`} value="Google Sign In" />
+                    <input onClick={signInWithGoogle} type="submit" className={`${'btn btn-primary mt-2'}`} value="Google Sign In" />
 
                     {user?.email && <div class="alert alert-primary" role="alert">
                         LogIn Successfully

@@ -87,7 +87,7 @@ const Footer = () => {
 
             </Container>
             <div className={`${styles.footerEnd} p-4 text-center fw-lighter`} >
-                <p>Copyright 2021 | All Rights Reserved By Electro Hub LTD.</p>
+                <p>Copyright 2021 | All Rights Reserved By ElectroHub LTD.</p>
             </div>
         </div>
     );
