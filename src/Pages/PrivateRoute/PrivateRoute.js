@@ -7,10 +7,14 @@ const PrivateRoute = ({ children, ...rest }) => {
 
 
     const { user, isLoading } = useAuth();
+
     let location = useLocation();
+
     if (isLoading) {
+
         return <Spinner animation="border" variant="danger" />
     }
+
     return user.email ? children : (<Navigate to="/login" state={{ from: location }} />)
 };
 
