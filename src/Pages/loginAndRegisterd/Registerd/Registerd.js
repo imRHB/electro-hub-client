@@ -12,7 +12,7 @@ const Registerd = () => {
     const [loginData, setLoginData] = useState({});
     const location = useLocation();
     const history = useNavigate();
-    const { user, authError, registerUser, signInWithGogle, isLoading } = useAuth();
+    const { user, authError, registerUser, signInWithGoogle, isLoading } = useAuth();
     const handleOnChange = e => {
         const field = e.target.name;
         const value = e.target.value;
@@ -31,7 +31,7 @@ const Registerd = () => {
 
     }
     const handleGoogleSignIn = () => {
-        signInWithGogle();
+        signInWithGoogle();
     }
     return (
         <>
