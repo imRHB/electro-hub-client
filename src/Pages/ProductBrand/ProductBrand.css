@@ -1,6 +1,6 @@
 
 .vehicles-types{
-    background-image:linear-gradient(0deg, rgba(10, 10, 10, 0.651), rgba(10, 10, 10, 0.829)), url(../../../Images/car-type-bg.jpg);
+    background-image:linear-gradient(0deg, rgba(10, 10, 10, 0.651), rgba(10, 10, 10, 0.829)), url(../ProductBrand/ProductBrand.js);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
