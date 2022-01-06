@@ -1,5 +1,6 @@
 import React from 'react';
 import Facilities from "../Facilities/Facilities";
+import ProductBrand from "../ProductBrand/ProductBrand";
 import FeaturedProducts from "../Products/FeaturedProducts/FeaturedProducts";
 import Footer from "../Shared/Footer/Footer";
 import Header from "../Shared/Header/Header";
@@ -11,6 +12,7 @@ const Landing = () => {
         <div>
             <Header />
             <TopSlider />
+            <ProductBrand />
             <FeaturedProducts />
             <Facilities />
             <Testimonial />

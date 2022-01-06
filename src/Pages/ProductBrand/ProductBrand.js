@@ -1,11 +1,12 @@
 import React from 'react';
-import luxury from '../../../Images/car-type/luxury.png'
-import pickup from '../../../Images/car-type/pickup-truck.png'
-import sedans from '../../../Images/car-type/sedans.png'
-import sports from '../../../Images/car-type/sports.png'
-import suvs from '../../../Images/car-type/suvs.png'
-import vans from '../../../Images/car-type/vans.png'
-import './ProductBrand.css'
+// import luxury from '../../../Images/car-type/luxury.png'
+// import pickup from '../../../Images/car-type/pickup-truck.png'
+// import sedans from '../../../Images/car-type/sedans.png'
+// import sports from '../../../Images/car-type/sports.png'
+// import suvs from '../../../Images/car-type/suvs.png'
+// import vans from '../../../Images/car-type/vans.png'
+import './ProductBrand.css';
+
 const ProductBrand = () => {
     return (
         <div>
@@ -17,7 +18,7 @@ const ProductBrand = () => {
                 <div class="type-car-card cartype">
                     <div class="car-cardbody">
                         <div class="car-cardbody-img">
-                            <img src={luxury} alt="" />
+                            <img src="" alt="" />
                         </div>
                         <div class="item-name">
                             <p>Luxury Cars</p>
@@ -25,7 +26,7 @@ const ProductBrand = () => {
                     </div>
                     <div class="car-cardbody">
                         <div class="car-cardbody-img">
-                            <img src={sports} alt="" />
+                            <img src="" alt="" />
                         </div>
                         <div class="item-name">
                             <p>Sports Cars</p>
@@ -33,7 +34,7 @@ const ProductBrand = () => {
                     </div>
                     <div class="car-cardbody">
                         <div class="car-cardbody-img">
-                            <img src={suvs} alt="" />
+                            <img src="" alt="" />
                         </div>
                         <div class="item-name">
                             <p>SUVS Cars</p>
@@ -41,7 +42,7 @@ const ProductBrand = () => {
                     </div>
                     <div class="car-cardbody">
                         <div class="car-cardbody-img">
-                            <img src={pickup} alt="" />
+                            <img src="" alt="" />
                         </div>
                         <div class="item-name">
                             <p>Pickup Cars</p>
@@ -49,7 +50,7 @@ const ProductBrand = () => {
                     </div>
                     <div class="car-cardbody">
                         <div class="car-cardbody-img">
-                            <img src={vans} alt="" />
+                            <img src="" alt="" />
                         </div>
                         <div class="item-name">
                             <p>Vans Cars</p>
@@ -57,7 +58,7 @@ const ProductBrand = () => {
                     </div>
                     <div class="car-cardbody">
                         <div class="car-cardbody-img">
-                            <img src={sedans} alt="" />
+                            <img src="" alt="" />
                         </div>
                         <div class="item-name">
                             <p>Sedans Cars</p>
