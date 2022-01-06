@@ -21,21 +21,25 @@ const Products = () => {
     }, []);
 
     return (
-        <div className="my-5 py-5">
+        <div>
             {
                 loading ? <div className={`${styles.spinnerContainer}`}><Spinner animation="grow" variant="primary" /></div>
                     :
-                    <Container>
-                        <h2 className="text-center fs-1 fw-bold text-secondary my-5">Available Products</h2>
-                        <Row xs={1} md={2} lg={3} xl={3} className="g-4">
-                            {
-                                products.map(product => <SingleProduct
-                                    key={product._id}
-                                    product={product}
-                                ></SingleProduct>)
-                            }
-                        </Row>
-                    </Container>
+                    <>
+                        <Header />
+                        <Container className="my-5 pb-5">
+                            <h2 className="text-center fs-1 fw-bold text-secondary my-5">Available Products</h2>
+                            <Row xs={1} md={2} lg={3} xl={3} className="g-4">
+                                {
+                                    products.map(product => <SingleProduct
+                                        key={product._id}
+                                        product={product}
+                                    ></SingleProduct>)
+                                }
+                            </Row>
+                        </Container>
+                        <Footer />
+                    </>
             }
         </div>
     );
