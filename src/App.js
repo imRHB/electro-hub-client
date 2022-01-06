@@ -19,8 +19,6 @@ import ManageProduct from "./Pages/Dashboard/ManageProduct/ManageProduct";
 import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
 import Login from "./Pages/loginAndRegisterd/Login/Login";
 import Registerd from "./Pages/loginAndRegisterd/Registerd/Registerd";
-// import Login from "./Pages/User/Login/Login";
-// import Register from './Pages/User/Register/Register';
 
 function App() {
   return (

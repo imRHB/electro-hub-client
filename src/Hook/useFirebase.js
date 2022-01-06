@@ -63,7 +63,7 @@ const useFirebase = () => {
             .finally(() => setIsLoading(false));
     }
     //Google Sign In
-    const signInWithGoogle = () => {
+    const signInWithGoogle = (location, navigate) => {
         setIsLoading(true);
 
         signInWithPopup(auth, googleProvider)
@@ -72,6 +72,7 @@ const useFirebase = () => {
                 //save user to database
                 saveUser(user.email, user.displayName, 'PUT');
                 setAuthError('');
+                navigate('/');
                 // ...
             }).catch((error) => {
                 setAuthError(error.message);
