@@ -58,7 +58,7 @@ const Login = () => {
                                 <Button variant="primary" type="submit">
                                     Login
                                 </Button>
-                                <Link to="/registerd"><Button variant="text">
+                                <Link to="/register"><Button variant="text">
                                     New User
                                 </Button></Link>
                                 <p>================</p>
