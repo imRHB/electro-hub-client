@@ -71,7 +71,7 @@ const Registerd = () => {
                                                 </InputGroup>
                                             </Form.Group>
                                             <Button variant="primary" type="submit">
-                                                Submit
+                                                Register
                                             </Button>
                                             <Link to="/login"><Button variant="text">
                                                 Already Registerd? Login Here

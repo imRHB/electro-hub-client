@@ -19,6 +19,7 @@ import ManageProduct from "./Pages/Dashboard/ManageProduct/ManageProduct";
 import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
 import Login from "./Pages/loginAndRegisterd/Login/Login";
 import Registerd from "./Pages/loginAndRegisterd/Registerd/Registerd";
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 
 function App() {
   return (
@@ -34,14 +35,15 @@ function App() {
 
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            {/* <Route path="/cart" element={<Cart />} /> */}
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Registerd />} />
             <Route path="/place-order/:productId" element={<OrderCheckout />} />
 
-            {/* Dashboard */}
+            {/* Dashboard | Private Route */}
 
-            <Route path="/dashboard" element={<Dashboard />}>
+            <Route path="/dashboard" element={<PrivateRoute>
+              <Dashboard />
+            </PrivateRoute>}>
               <Route path="product-details" element={<ProductDetails />} />
               <Route path="manage-order" element={<ManageOrder />} />
               <Route path="manage-product" element={<ManageProduct />} />
@@ -50,22 +52,6 @@ function App() {
               <Route path="add-product" element={<AddProduct />} />
               <Route path="add-review" element={<AddReview />} />
             </Route>
-            <Route path="place-order" element={<OrderCheckout />} />
-
-            {/* <Route path="/manage-order" element={<ManageOrder/>}
-          <Route path="/dashboard/*" element={<PrivateRoute>
-            <Dashboard />
-          </PrivateRoute>}>
-            <Route path="" element={<DashboardHome />} />
-            <Route path="manage-order" element={<ManageOrders />} />
-            <Route path="addProducts" element={<AddProducts />} />
-            <Route path="manageProducts" element={<ManageProducts />} />
-            <Route path="myOrders" element={<MyOrders />} />
-            <Route path="addReview" element={<AddReview />} />
-          </Route>
-          <Route path="/checkout" element={<PrivateRoute>
-            <Checkout />
-          </PrivateRoute>} /> */}
 
             <Route path="*" element={<NotFound />} />
           </Routes>
