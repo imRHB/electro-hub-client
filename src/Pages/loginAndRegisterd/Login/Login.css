@@ -1,0 +1,24 @@
+.background{
+    background: linear-gradient(rgba(0, 0, 0, 0.699),rgba(0, 0, 0, 0.842)),url(../../../Images/registration.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 1px;
+    backdrop-filter: blur(10px);
+}
+.login-box{
+    max-width: 1000px;
+    float: none;
+    margin: 150px auto;
+}
+.login-left{
+    background: rgba(211, 211, 211, 0.986);
+    padding: 30px;
+}
+.login-right{
+    background: linear-gradient(rgba(0, 0, 50, 0.027),rgba(0, 0, 50, 0.014)),url(../../../Images/registration.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 120px;
+
+}
