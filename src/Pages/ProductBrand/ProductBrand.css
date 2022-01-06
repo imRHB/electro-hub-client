@@ -1,6 +1,5 @@
-
 .vehicles-types{
-    background-image:linear-gradient(0deg, rgba(10, 10, 10, 0.651), rgba(10, 10, 10, 0.829)), url(../ProductBrand/ProductBrand.js);
+    background-image:linear-gradient(0deg, rgba(10, 10, 10, 0.651), rgba(10, 10, 10, 0.829)), url('https://i.ibb.co/tHPyVzg/imagens-ecommerce.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -34,7 +33,8 @@
       right    : -1px;
       bottom: -1px;
       transform: skew(2deg,2deg);
-      background-color: rgba(0, 0, 0, 0.932);
+      /* background-color: rgba(0, 0, 0, 0.932); */
+      background-color: #ffffff;
       z-index: -1200;
      
     }
@@ -55,12 +55,13 @@
     .car-cardbody p{
       margin-top: 20px;
       text-align: center;
-      color: #ffffff;
+      font-weight: 700;
+      color: #000;
       text-transform: uppercase;
       font-size: 16px;
     }
     .section-title{
-      padding: 18vh 0;
+      padding: 8vh 0;
       display: flex;
       width: 100%;
       color: white;

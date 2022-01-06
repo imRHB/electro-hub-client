@@ -11,7 +11,7 @@ const ProductBrand = () => {
     return (
         <div>
             <section class="vehicles-types">
-                <div class="section-title">
+                <div class="text-center mx-auto section-title">
                     <h1>TYPES OF PRODUCTS</h1>
                     <p>THAT WE ARE CURRENTLY DEALING</p>
                 </div>
@@ -58,7 +58,7 @@ const ProductBrand = () => {
                     </div>
                     <div class="car-cardbody">
                         <div class="car-cardbody-img">
-                            <img src="" alt="" />
+                            <img src="https://i.ibb.co/429y6XY/9-dfd0a96f-7b86-40a1-8a6b-ec90fae36a46-425x.jpg" alt="" />
                         </div>
                         <div class="item-name">
                             <p>Drone</p>
