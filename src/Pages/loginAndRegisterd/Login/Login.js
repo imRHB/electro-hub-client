@@ -10,7 +10,7 @@ const Login = () => {
     const [loginData, setLoginData] = useState({});
     const location = useLocation();
     const navigate = useNavigate();
-    const { user, authError, loginUser, signInWithGogle, isLoading } = useAuth();
+    const { user, authError, loginUser, signInWithGoogle, isLoading } = useAuth();
     const handleOnChange = e => {
         const field = e.target.name;
         const value = e.target.value;
@@ -24,7 +24,7 @@ const Login = () => {
         e.preventDefault();
     }
     const handleGoogleSignIn = () => {
-        signInWithGogle();
+        signInWithGoogle();
     }
     return (
         <div className="background">
