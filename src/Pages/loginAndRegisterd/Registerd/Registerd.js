@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { Alert, Button, Card, Col, Container, Form, InputGroup, Row, Spinner } from 'react-bootstrap';
+import { Alert, Button, Form, InputGroup, Spinner } from 'react-bootstrap';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 import './Registerd.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faKey, faUser, faAt, faFileSignature } from '@fortawesome/free-solid-svg-icons';
+import { faKey, faUser, faFileSignature } from '@fortawesome/free-solid-svg-icons';
 import useAuth from '../../../Hook/useAuth';
 
 
@@ -28,7 +28,6 @@ const Registerd = () => {
         }
         registerUser(loginData.email, loginData.password, loginData.name, navigate);
         e.preventDefult();
-
     }
     const handleGoogleSignIn = () => {
         signInWithGoogle(location, navigate);

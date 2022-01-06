@@ -37,7 +37,12 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Registerd />} />
-            <Route path="/place-order/:productId" element={<OrderCheckout />} />
+            <Route path="/place-order/:productId" element={<PrivateRoute>
+              <OrderCheckout />
+            </PrivateRoute>}>
+
+            </Route>
+            {/* <Route path="/place-order/:productId" element={<OrderCheckout />} /> */}
 
             {/* Dashboard | Private Route */}
 

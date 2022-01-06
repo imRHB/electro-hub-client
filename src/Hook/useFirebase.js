@@ -68,11 +68,11 @@ const useFirebase = () => {
 
         signInWithPopup(auth, googleProvider)
             .then((result) => {
-
+                const destination = location?.state?.from || '/';
                 //save user to database
                 saveUser(user.email, user.displayName, 'PUT');
                 setAuthError('');
-                navigate('/');
+                navigate(destination);
                 // ...
             }).catch((error) => {
                 setAuthError(error.message);
