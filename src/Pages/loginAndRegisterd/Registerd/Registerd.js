@@ -11,7 +11,7 @@ import useAuth from '../../../Hook/useAuth';
 const Registerd = () => {
     const [loginData, setLoginData] = useState({});
     const location = useLocation();
-    const history = useNavigate();
+    const navigate = useNavigate();
     const { user, authError, registerUser, signInWithGoogle, isLoading } = useAuth();
     const handleOnChange = e => {
         const field = e.target.name;
@@ -26,12 +26,12 @@ const Registerd = () => {
             alert('password did not match');
             return
         }
-        registerUser(loginData.email, loginData.password, loginData.name, history);
+        registerUser(loginData.email, loginData.password, loginData.name, navigate);
         e.preventDefult();
 
     }
     const handleGoogleSignIn = () => {
-        signInWithGoogle();
+        signInWithGoogle(location, navigate);
     }
     return (
         <>
