@@ -1,0 +1,103 @@
+
+.vehicles-types{
+    background-image:linear-gradient(0deg, rgba(10, 10, 10, 0.651), rgba(10, 10, 10, 0.829)), url(../../../Images/car-type-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom:10vh;
+    background-attachment: fixed;
+    }
+    .type-car-card{
+      display: grid;
+      padding: 10px 70px;
+      grid-template-columns: repeat(6,1fr);
+    }
+    .car-cardbody{
+      margin: 20px 10px;
+      padding: 30px 20px;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      flex-direction: column;
+      background-color: rgba(255, 0, 0, 0.979);
+      box-shadow: 1px 1px 10px 2px #0000007c;
+      transition: .9s all ease;
+      overflow: hidden;
+      backdrop-filter: blur(20px);
+    }
+    
+    .car-cardbody::before{
+      content : "";
+      position: absolute;
+      top: -1px;
+      left: -1px;
+      right    : -1px;
+      bottom: -1px;
+      transform: skew(2deg,2deg);
+      background-color: rgba(0, 0, 0, 0.932);
+      z-index: -1200;
+     
+    }
+    .car-cardbody:hover{
+      box-shadow: 0px 0px 5px 0px #ac060691;
+      backdrop-filter: blur(0px);
+      background-color: rgba(0, 0, 0, 0.781);
+    }
+    .car-cardbody .car-cardbody-img{
+      height: 20vh;
+    }
+    .car-cardbody img{
+      width: 100%;
+      min-height: 20vh;
+      max-height: 20vh;
+      display: block;
+    }
+    .car-cardbody p{
+      margin-top: 20px;
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+    .section-title{
+      padding: 18vh 0;
+      display: flex;
+      width: 100%;
+      color: white;
+      align-items: center;
+      align-content: stretch;
+      justify-content: center;
+      font-family: 'Poppins', sans-serif;
+      flex-direction: column;
+    }
+    .section-title h1{
+    font-size: 40px;
+    }
+    .section-title p{
+     
+      font-size: 20px;
+    }
+
+    
+/* -------------
+    Tablet
+-------------- */
+@media only screen and (min-width:541px) and (max-width:994px) {
+    .type-car-card{
+        display: grid;
+
+        grid-template-columns: repeat(2,1fr);
+      }
+  
+}
+/* -------------
+    Mobile
+-------------- */
+@media only screen and (max-width:540px) {
+    .type-car-card{
+        display: grid;
+
+        grid-template-columns: repeat(1,1fr);
+      }
+
+}
