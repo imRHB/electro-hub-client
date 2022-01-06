@@ -99,11 +99,11 @@ const OrderCheckout = () => {
                                     <form onSubmit={handleSubmit(onSubmit)} className={`${'pb-4'} ${styles.orderCheckout}`}>
                                         <input {...register("displayName", { required: false })} value={user.displayName} readOnly />
 
-                                        <input {...register("email", { required: false })} value={user.email} readOnly />
+                                        <input {...register("email", { required: true })} value={user.email} readOnly />
 
-                                        <textarea {...register("shippingAddress", { required: false })} placeholder="Enter shipping address" />
+                                        <textarea {...register("shippingAddress", { required: true })} placeholder="Enter shipping address" />
 
-                                        <input type="number" {...register("phone", { required: false })} placeholder="Phone number" />
+                                        <input type="number" {...register("phone", { required: true })} placeholder="Phone number" />
 
                                         <input type="submit" value="Place Order" className="btn btn-secondary" />
                                     </form>
