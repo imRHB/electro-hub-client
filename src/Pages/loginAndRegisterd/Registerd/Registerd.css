@@ -1,0 +1,24 @@
+.registration-background{
+    background: linear-gradient(rgba(0, 0, 0, 0.699),rgba(0, 0, 0, 0.842));
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 1px;
+    backdrop-filter: blur(10px);
+}
+.registration-box{
+    max-width: 1000px;
+    float: none;
+    margin: 150px auto;
+}
+.registration-left{
+    background: rgba(250, 250, 250, 0.986);
+    padding: 30px;
+}
+.registration-right{
+    background: linear-gradient(rgba(0, 0, 50, 0.027),rgba(0, 0, 50, 0.014));
+    background-size: cover;
+    background-position: center;
+    padding: 120px;
+
+}
