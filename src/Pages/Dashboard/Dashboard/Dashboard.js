@@ -14,7 +14,6 @@ const listIcon = <FontAwesomeIcon icon={faThList} />;
 const plusIcon = <FontAwesomeIcon icon={faPlus} />;
 const userPlus = <FontAwesomeIcon icon={faUserPlus} />;
 const serviceIcon = <FontAwesomeIcon icon={faThLarge} />;
-// const paymentIcon = <FontAwesomeIcon icon={faMoneyCheckAlt} />;
 const logoutIcon = <FontAwesomeIcon icon={faSignOutAlt} />;
 
 const Dashboard = () => {
@@ -49,6 +48,7 @@ const Dashboard = () => {
 
                         <Col xs={12} sm={12} md={9} lg={9} xl={9}>
                             <div className="bg-light rounded-3 px-2 py-4 border">
+
                                 <Outlet />
                             </div>
                         </Col>
