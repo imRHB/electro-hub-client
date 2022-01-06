@@ -18,7 +18,7 @@ const useFirebase = () => {
 
     const googleProvider = new GoogleAuthProvider();
 
-    const registerUser = (email, password, name, history) => {
+    const registerUser = (email, password, name, navigate) => {
         setIsLoading(true);
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
@@ -37,7 +37,7 @@ const useFirebase = () => {
                     // An error occurred
                     // ...
                 });
-                history('/');
+                navigate('/');
                 setAuthError('');
                 // ...
             })
@@ -49,12 +49,12 @@ const useFirebase = () => {
     }
     // Login User
 
-    const loginUser = (email, password, location, history) => {
+    const loginUser = (email, password, location, navigation) => {
         setIsLoading(true);
         signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 const destination = location?.state?.from || '/';
-                history(destination);
+                navigation(destination);
                 setAuthError('');
             })
             .catch((error) => {
