@@ -26,7 +26,7 @@ const About = () => {
     return (
         <div>
             <Header />
-            <div className={`${styles.aboutSection}`}>
+            <div>
                 <div className={`d-flex align-items-center justify-content-center ${styles.aboutBanner}`}>
                     <h1 className=" text-uppercase text-white fw-bold">About Us</h1>
                 </div>

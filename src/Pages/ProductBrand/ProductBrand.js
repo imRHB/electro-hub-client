@@ -12,7 +12,7 @@ const ProductBrand = () => {
         <div>
             <section class="vehicles-types">
                 <div class="section-title">
-                    <h1>TYPES OF VEHICLES</h1>
+                    <h1>TYPES OF PRODUCTS</h1>
                     <p>THAT WE ARE CURRENTLY DEALING</p>
                 </div>
                 <div class="type-car-card cartype">
@@ -21,7 +21,7 @@ const ProductBrand = () => {
                             <img src="" alt="" />
                         </div>
                         <div class="item-name">
-                            <p>Luxury Cars</p>
+                            <p>Laptop</p>
                         </div>
                     </div>
                     <div class="car-cardbody">
@@ -29,7 +29,7 @@ const ProductBrand = () => {
                             <img src="" alt="" />
                         </div>
                         <div class="item-name">
-                            <p>Sports Cars</p>
+                            <p>Phone</p>
                         </div>
                     </div>
                     <div class="car-cardbody">
