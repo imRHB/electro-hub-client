@@ -7,9 +7,8 @@ import Landing from "./Pages/Landing/Landing";
 import Products from './Pages/Products/Products/Products';
 import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
-import Login from "./Pages/Login/Login";
-import Register from './Pages/Register/Register';
-import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
+// import Login from "./Pages/Login/Login";
+// import Register from './Pages/Register/Register';
 import ManageOrder from "./Pages/Dashboard/ManageOrder/ManageOrder";
 import MakeAdmin from "./Pages/Dashboard/MakeAdmin/MakeAdmin";
 import MyOrder from "./Pages/Dashboard/MyOrder/MyOrder";
@@ -19,10 +18,13 @@ import NotFound from './Pages/NotFound/NotFound';
 import ProductDetails from "./Pages/Details/ProductDetails/ProductDetails";
 import OrderCheckout from "./Pages/Details/OrderCheckout/OrderCheckout";
 import ManageProduct from "./Pages/Dashboard/ManageProduct/ManageProduct";
+import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
+import Login from "./Pages/User/Login/Login";
+import Register from './Pages/User/Register/Register';
 
 function App() {
   return (
-    <div className="">
+    <div>
       <AuthProvider>
         <Router>
           <ToastContainer />
@@ -39,7 +41,7 @@ function App() {
             <Route path="/register" element={<Register />} />
             <Route path="/place-order/:productId" element={<OrderCheckout />} />
 
-            {/* Details */}
+            {/* Dashboard */}
 
             <Route path="/dashboard" element={<Dashboard />}>
               <Route path="product-details" element={<ProductDetails />} />

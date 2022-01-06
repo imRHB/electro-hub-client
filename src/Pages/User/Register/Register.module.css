@@ -1,0 +1,7 @@
+.customWidth {
+    max-width: 560px;
+}
+.defLink:hover {
+    background-color: #eee;
+    text-decoration: none;
+}
