@@ -24,7 +24,7 @@ const Login = () => {
         e.preventDefault();
     }
     const handleGoogleSignIn = () => {
-        signInWithGoogle();
+        signInWithGoogle(location, navigate);
     }
     return (
         <div className="background">
