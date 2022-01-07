@@ -17,7 +17,7 @@ const serviceIcon = <FontAwesomeIcon icon={faThLarge} />;
 const logoutIcon = <FontAwesomeIcon icon={faSignOutAlt} />;
 
 const Dashboard = () => {
-    const { logOut, admin } = useAuth();
+    const { user, logOut, admin } = useAuth();
     console.log(admin);
 
     return (
@@ -31,15 +31,23 @@ const Dashboard = () => {
                                     <>
                                         <Link to="/home"><span className="me-3">{homeIcon}</span>Home</Link>
 
-                                        <Link to="/dashboard"><span className="me-3">{dashboardIcon}</span>Dashboard</Link>
-                                        <Link to="my-order"><span className="me-3">{listIcon}</span>My Order</Link>
+                                        {
+                                            user && !admin && <>
+                                                <Link to="/dashboard"><span className="me-3">{dashboardIcon}</span>Dashboard</Link>
+                                                <Link to="my-order"><span className="me-3">{listIcon}</span>My Order</Link>
 
-                                        <Link to="add-review"><span className="me-3">{reviewIcon}</span>Add Review</Link>
+                                                <Link to="add-review"><span className="me-3">{reviewIcon}</span>Add Review</Link>
+                                            </>
+                                        }
 
-                                        <Link to="manage-product"><span className="me-3">{serviceIcon}</span>Manage Product</Link>
-                                        <Link to="manage-order"><span className="me-3">{serviceIcon}</span>Manage Order</Link>
-                                        <Link to="add-product"><span className="me-3">{plusIcon}</span>Add Product</Link>
-                                        <Link to="make-admin"><span className="me-3">{userPlus}</span>Make Admin</Link>
+                                        {
+                                            admin && <>
+                                                <Link to="manage-product"><span className="me-3">{serviceIcon}</span>Manage Product</Link>
+                                                <Link to="manage-order"><span className="me-3">{serviceIcon}</span>Manage Order</Link>
+                                                <Link to="add-product"><span className="me-3">{plusIcon}</span>Add Product</Link>
+                                                <Link to="make-admin"><span className="me-3">{userPlus}</span>Make Admin</Link>
+                                            </>
+                                        }
 
                                         <Link to='/login' onClick={logOut}><span className="me-3">{logoutIcon}</span>Logout</Link>
                                     </>
