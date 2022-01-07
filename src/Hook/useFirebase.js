@@ -68,6 +68,7 @@ const useFirebase = () => {
 
         signInWithPopup(auth, googleProvider)
             .then((result) => {
+                const user = result?.user;
                 const destination = location?.state?.from || '/';
                 //save user to database
                 saveUser(user?.email, user?.displayName, 'PUT');
