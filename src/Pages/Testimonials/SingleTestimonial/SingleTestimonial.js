@@ -1,7 +1,6 @@
 import React from 'react';
 import { Card, Col, Row } from 'react-bootstrap';
 import Rating from 'react-rating';
-import useAuth from '../../../Hook/useAuth';
 import styles from './SingleTestimonial.module.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from '@fortawesome/free-regular-svg-icons';
@@ -17,7 +16,7 @@ const SingleTestimonial = ({ testimonial }) => {
                     {
                         testimonial?.img ? (
                             <div>
-                                <img className='mx-auto img-fluid w-75 border border-3 rounded-circle border-secondary' src={testimonial?.img} alt="" />
+                                <img className='mx-auto img-fluid border border-3 rounded-circle border-secondary' src={testimonial?.img} style={{ width: '48px', height: '48px' }} alt="" />
                             </div>
                         ) : (
                             <div>
