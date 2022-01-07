@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 import styles from './AddProduct.module.css';
 
 const AddProduct = () => {
@@ -19,7 +20,10 @@ const AddProduct = () => {
 
             })
 
-        alert('New product added successfully.');
+        toast.success(`Product added successfully`, {
+            position: "bottom-left",
+            autoClose: 2000,
+        });
         reset();
     };
 

@@ -10,19 +10,21 @@ const ManageOrder = () => {
             .then(data => setOrders(data));
     }, [orders]);
 
-    const handleUpdateStatus = productId => {
-        fetch(`https://desolate-beyond-60013.herokuapp.com/orders/${productId}`, {
-            method: 'PUT',
-            headers: {
-                'content-type': 'application.json'
-            },
-            body: JSON.stringify({ status: 'Shipped' })
-        })
-            .then(res => res.json())
-            .then(result => {
-
+    /* 
+        const handleUpdateStatus = productId => {
+            fetch(`https://desolate-beyond-60013.herokuapp.com/orders/${productId}`, {
+                method: 'PUT',
+                headers: {
+                    'content-type': 'application.json'
+                },
+                body: JSON.stringify({ status: 'Shipped' })
             })
-    };
+                .then(res => res.json())
+                .then(result => {
+    
+                })
+        };
+         */
 
     const handleDeleteOrder = orderId => {
         const deleteConfirmation = window.confirm('Do you want delete the order?');
@@ -70,7 +72,7 @@ const ManageOrder = () => {
                                 <td>{order.displayName}</td>
                                 <td>{order.email}</td>
                                 <td>{order.status}</td>
-                                <td><Button variant="success" size="sm" onClick={() => handleUpdateStatus(order._id)}>APPROVE</Button> <Button onClick={() => handleDeleteOrder(order._id)} variant="danger" size="sm">DELETE</Button></td>
+                                <td>{/* <Button variant="success" size="sm" onClick={() => handleUpdateStatus(order._id)}>APPROVE</Button> */} <Button onClick={() => handleDeleteOrder(order._id)} variant="danger" size="sm">DELETE</Button></td>
                             </tr>)
                         }
                     </tbody>

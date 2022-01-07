@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Container, Table } from "react-bootstrap";
+import { toast } from 'react-toastify';
 
 const ManageProduct = () => {
     const [products, setProducts] = useState([]);
@@ -21,7 +22,10 @@ const ManageProduct = () => {
             })
                 .then(res => res.json())
                 .then(result => {
-                    alert('Product deleted successfully.');
+                    toast.error(`Product successfully deleted`, {
+                        position: "bottom-left",
+                        autoClose: 2000,
+                    });
                 })
         }
     };
