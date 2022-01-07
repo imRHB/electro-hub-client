@@ -70,7 +70,7 @@ const useFirebase = () => {
             .then((result) => {
                 const destination = location?.state?.from || '/';
                 //save user to database
-                saveUser(user.email, user.displayName, 'PUT');
+                saveUser(user?.email, user?.displayName, 'PUT');
                 setAuthError('');
                 navigate(destination);
                 // ...
