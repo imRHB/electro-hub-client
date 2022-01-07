@@ -15,9 +15,9 @@ const SingleTestimonial = ({ testimonial }) => {
             <Row xs={1} md={1} lg={1} className='pb-3 d-flex justify-content-center align-items-center'>
                 <Col xs={12} md={4} lg={4}>
                     {
-                        user?.photoURL ? (
+                        testimonial?.img ? (
                             <div>
-                                <img className='mx-auto img-fluid w-75 border border-3 rounded-circle border-secondary' src={user?.photoURL} alt="" />
+                                <img className='mx-auto img-fluid w-75 border border-3 rounded-circle border-secondary' src={testimonial?.img} alt="" />
                             </div>
                         ) : (
                             <div>
