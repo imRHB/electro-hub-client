@@ -9,7 +9,7 @@ import { faUserCircle } from '@fortawesome/free-regular-svg-icons';
 const userIcon = <FontAwesomeIcon icon={faUserCircle} className='fa-3x' />
 
 const SingleTestimonial = ({ testimonial }) => {
-    const { user } = useAuth();
+
     return (
         <Card className={`shadow-sm mx-2 my-5 text-center px-3 py-4 rounded-3 h-100 ${styles.testimonialCard}`}>
             <Row xs={1} md={1} lg={1} className='pb-3 d-flex justify-content-center align-items-center'>
