@@ -20,7 +20,7 @@ const AddReview = () => {
     };
 
     const onSubmit = (data) => {
-        data.name = user?.displayName || user?.name;
+        data.name = user?.displayName;
         data.email = user?.email;
         data.img = user.photoURL;
         data.rating = rating;

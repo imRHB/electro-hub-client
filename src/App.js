@@ -20,6 +20,7 @@ import Dashboard from "./Pages/Dashboard/Dashboard/Dashboard";
 import Login from "./Pages/loginAndRegisterd/Login/Login";
 import Registerd from "./Pages/loginAndRegisterd/Registerd/Registerd";
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
+import AdminRoute from "./Pages/AdminRoute/AdminRoute";
 
 function App() {
   return (
@@ -53,7 +54,7 @@ function App() {
               <Route path="add-review" element={<AddReview />} />
               <Route path="manage-order" element={<ManageOrder />} />
               <Route path="manage-product" element={<ManageProduct />} />
-              <Route path="make-admin" element={<MakeAdmin />} />
+              <Route path="make-admin" element={<AdminRoute><MakeAdmin /></AdminRoute>} />
               <Route path="add-product" element={<AddProduct />} />
             </Route>
 
