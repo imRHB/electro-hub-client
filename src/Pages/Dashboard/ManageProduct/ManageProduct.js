@@ -22,7 +22,7 @@ const ManageProduct = () => {
             })
                 .then(res => res.json())
                 .then(result => {
-                    toast.error(`Product successfully deleted`, {
+                    toast.error(`Product deleted successfully`, {
                         position: "bottom-left",
                         autoClose: 2000,
                     });

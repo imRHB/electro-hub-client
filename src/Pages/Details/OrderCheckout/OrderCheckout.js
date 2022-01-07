@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Col, Container, Row, Spinner } from 'react-bootstrap';
 import { useForm } from "react-hook-form";
 import { useNavigate, useParams } from 'react-router-dom'
+import { toast } from "react-toastify";
 import useAuth from "../../../Hook/useAuth";
 import Footer from "../../Shared/Footer/Footer";
 import Header from "../../Shared/Header/Header";
@@ -39,7 +40,10 @@ const OrderCheckout = () => {
         })
             .then(res => res.json())
             .then(result => {
-                alert('Your order is successful. You can track or manage order from dashboard.');
+                toast.success(`Order placed successfully`, {
+                    position: "bottom-left",
+                    autoClose: 2000,
+                });
                 reset();
                 navigate('/shop');
             })

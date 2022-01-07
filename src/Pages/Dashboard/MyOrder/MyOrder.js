@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Container, Table } from "react-bootstrap";
+import { toast } from "react-toastify";
 import useAuth from "../../../Hook/useAuth";
 
 const MyOrder = () => {
@@ -24,7 +25,10 @@ const MyOrder = () => {
             })
                 .then(res => res.json())
                 .then(result => {
-                    alert("Order cancelled successfully.");
+                    toast.error(`Order canceled successfully`, {
+                        position: "bottom-left",
+                        autoClose: 2000,
+                    });
                 })
         }
     };

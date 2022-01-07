@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Container, Table } from "react-bootstrap";
+import { toast } from "react-toastify";
 
 const ManageOrder = () => {
     const [orders, setOrders] = useState([]);
@@ -36,7 +37,10 @@ const ManageOrder = () => {
             })
                 .then(res => res.json())
                 .then(result => {
-                    alert('Order deleted successfully.');
+                    toast.error(`Order deleted successfully`, {
+                        position: "bottom-left",
+                        autoClose: 2000,
+                    });
                 })
         }
     };
