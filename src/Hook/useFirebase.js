@@ -69,6 +69,7 @@ const useFirebase = () => {
         signInWithPopup(auth, googleProvider)
             .then((result) => {
                 const user = result?.user;
+
                 const destination = location?.state?.from || '/';
                 //save user to database
                 saveUser(user?.email, user?.displayName, 'PUT');
@@ -115,16 +116,10 @@ const useFirebase = () => {
             },
             body: JSON.stringify(user)
         })
-            .then()
-    }
-    /* useEffect(() => {
-        fetch(`https://desolate-beyond-60013.herokuapp.com/users/${user.email}`)
-            .then(res => res.json())
-            .then(data => {
-                setAdmin(data.admin);
-                console.log(data.admin);
+            .then((res) => {
+
             })
-    }, [user.email]); */
+    };
 
     useEffect(() => {
         fetch(`https://desolate-beyond-60013.herokuapp.com/users/${user?.email}`)
